@@ -1,0 +1,84 @@
+{
+    "all" : [
+        {
+            "title": "Graphium",
+            "img": "graphium",
+            "img_alt": "Graphium Product",
+            "description": "Graphium is B2B SaaS Platform designed to manage and visualise enterprises  unstructured data.",
+            "link": "https://graphium.ai/",
+            "tags": ["tech", "business"]
+        },
+        {
+            "title": "Graph Visualisation",
+            "img": "graphvis",
+            "img_alt": "Knowledge Graph",
+            "description": "Utilising D3 and Neo4J Graph Databases to create knowledge graph visualisations based on a users context.",
+            "link": null,
+            "tags": ["tech"]
+        },
+        {
+            "title": "Automatic Topic Extraction",
+            "img": "topicextraction",
+            "img_alt": "Topic Extraction Product",
+            "description": "Utilising Spacy.io and to generate a custom Named Entity Recognition model.",
+            "link": null,
+            "tags": ["tech"]
+        },
+        {
+            "title": "Localite",
+            "img": "localite",
+            "img_alt": "Localite Product",
+            "description": "Localite is an online community platform designed to help people connect, share, and learn from others in their local area.",
+            "link": null,
+            "tags": ["tech"]
+        },
+        {
+            "title": "The Grand Appeal",
+            "img": "grandappeal",
+            "img_alt": "Grand Appeal Product",
+            "description": "Developing an addition to the Grand Appeals website to increase user engagement.",
+            "link": null,
+            "tags": ["tech"]
+        },
+        {
+            "title": "Planana",
+            "img": "planana",
+            "img_alt": "Planana Product",
+            "description": "Planana is a website designed to help busy people quickly plan healthy meals for the week.",
+            "link": null,
+            "tags": ["tech"]
+        },
+        {
+            "title": "Utopi",
+            "img": "utopi",
+            "img_alt": "Utopi Product",
+            "description": "Utopi develops sustainable, modular toys for children.",
+            "link": null,
+            "tags": ["design", "business"]
+        },
+        {
+            "title": "UniBoost",
+            "img": "uniboost",
+            "img_alt": "UniBoost Product",
+            "description": "UniBoost is an app designed to help students prioritise and care for their mental wellbeing.",
+            "link": null,
+            "tags": ["design", "business"]
+        },
+        {
+            "title": "3D Modelling",
+            "img": "3dmodelling",
+            "img_alt": "3D Modelling Product",
+            "description": "Working with Maya to develop realistic 3d models and animations.",
+            "link": null,
+            "tags": ["design"]
+        },
+        {
+            "title": "Camp Greenwoods",
+            "img": "greenwoods",
+            "img_alt": "Camp Greenwoods Product",
+            "description": "While working at a Children's summer camp in China, I set up a UK Counsellor recruitment project",
+            "link": null,
+            "tags": ["business"]
+        }
+    ]
+}

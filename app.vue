@@ -1,7 +1,7 @@
 <template>
-    <div class='flex flex-col h-screen justify-between'>
+    <div class="font-poppins bg-charcoal">
         <AppHeader/>
-        <NuxtPage />
+        <NuxtPage class='min-h-screen' />
         <AppFooter/>
     </div>
 </template>
