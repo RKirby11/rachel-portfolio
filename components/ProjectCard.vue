@@ -1,6 +1,14 @@
 <template>
-    <div class="h-52 rounded-md shadow-xl bg-no-repeat bg-cover bg-center hover:animate-bounce_sm" :class="`bg-${project.img}`" @mouseover="hover = true" @mouseleave="hover = false">
-        <div v-if='hover' class="h-full w-full bg-black p-4 flex flex-col justify-between rounded-sm" >
+    <div 
+        class="h-52 rounded-md shadow-light_2xl dark:shadow-2xl bg-no-repeat bg-cover bg-center hover:animate-bounce_sm hover:cursor-pointer" 
+        :class="`bg-[url('${project.img}')]`" 
+        @mouseover="hover = true" 
+        @mouseleave="hover = false"
+    >
+        <div 
+            v-if='hover' 
+            class="h-full w-full p-4 flex flex-col justify-between rounded-md bg-dblue" 
+        >
             <div class="flex-col">
                 <h3 class='text-xl font-bold text-white'>{{ project.title }}</h3>
                 <p class='text-white'>{{project.description}}</p>
@@ -11,7 +19,7 @@
                     <i class='text-white'>Click to read</i>
                 </div>
                 <div class='flex'>
-                    <div v-for='tag in project.tags' :key='tag' class='w-fit bg-dblue rounded-md px-2 py-1 text-white text-sm mr-2'>
+                    <div v-for='tag in project.tags' :key='tag' class='w-fit bg-white text-charcoal dark:bg-charcoal dark:text-white rounded-md px-2 py-1 text-sm mr-2'>
                             <i>{{ tag }}</i>
                     </div>
                 </div>
@@ -32,5 +40,8 @@ export default {
             hover: false,
         }
     },
+    computed: {
+        page: () => useRoute().path
+    }
 }
 </script>

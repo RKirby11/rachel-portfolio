@@ -1,84 +1,256 @@
 {
-    "all" : [
+    "projects" : [
         {
             "title": "Graphium",
-            "img": "graphium",
+            "img": "/images/projects/graphium.png",
             "img_alt": "Graphium Product",
-            "description": "Graphium is B2B SaaS Platform designed to manage and visualise enterprises  unstructured data.",
+            "description": "Graphium is B2B SaaS Platform designed to manage and visualise enterprises unstructured data.",
             "link": "https://graphium.ai/",
-            "tags": ["tech", "business"]
+            "tags": ["tech", "business"],
+            "overview" : "to add",
+            "additional_imgs" : [
+                "/images/projects/graphium.png",
+                "/images/projects/graphium-1.jpeg",
+                "/images/projects/graphium-2.jpeg",
+                "/images/projects/graphium-3.jpeg",
+                "/images/projects/graphium-4.jpeg"
+            ],
+            "toolkit": [
+                {
+                    "skill": "Jira",
+                    "icon": "/icons/skills/jira.png"
+                },
+                {
+                    "skill": "Confluence",
+                    "icon": "/icons/skills/confluence.png"
+                },
+                {
+                    "skill": "Coda.io",
+                    "icon": "/icons/skills/coda.png"
+                },
+                {
+                    "skill": "Miro",
+                    "icon": "/icons/skills/miro.png"
+                },
+                {
+                    "skill": "PHP",
+                    "icon": "/icons/skills/php.png"
+                },
+                {
+                    "skill": "Laravel",
+                    "icon": "/icons/skills/laravel.png"
+                },
+                {
+                    "skill": "VueJS",
+                    "icon": "/icons/skills/vue.png"
+                },
+                {
+                    "skill": "Python",
+                    "icon": "/icons/skills/python.png"
+                },
+                {
+                    "skill": "FastAPI",
+                    "icon": "/icons/skills/fastapi.svg"
+                }
+            ],
+            "role" : "to add",
+            "process": "to add",
+            "result": "to add"
         },
         {
             "title": "Graph Visualisation",
-            "img": "graphvis",
+            "img": "/images/projects/graphvis.png",
             "img_alt": "Knowledge Graph",
             "description": "Utilising D3 and Neo4J Graph Databases to create knowledge graph visualisations based on a users context.",
             "link": null,
-            "tags": ["tech"]
+            "tags": ["tech"],
+            "overview" : "to add",
+            "additional_imgs": [
+                "/images/projects/graphvis.png",
+                "/images/projects/graphvis-2.png",
+                "/images/projects/graphvis-3.png",
+                "/images/projects/graphvis-4.png"
+            ],
+            "toolkit": [
+                {
+                    "skill": "VueJS",
+                    "icon": "/icons/skills/vue.png"
+                },
+                {
+                    "skill": "D3",
+                    "icon": "/icons/skills/d3.png"
+                },
+                {
+                    "skill": "Neo4J",
+                    "icon": "/icons/skills/neo4j.png"
+                }
+            ],
+            "role": "to add",
+            "process": "to add",
+            "result": "to add"
         },
         {
             "title": "Automatic Topic Extraction",
-            "img": "topicextraction",
+            "img": "/images/projects/topicextraction.png",
             "img_alt": "Topic Extraction Product",
             "description": "Utilising Spacy.io and to generate a custom Named Entity Recognition model.",
             "link": null,
-            "tags": ["tech"]
+            "tags": ["tech"],
+            "overview" : "to add",
+            "additional_imgs": [],
+            "toolkit": [
+                {
+                    "skill": "Python",
+                    "icon": "/icons/skills/python.png"
+                },
+                {
+                    "skill": "Spacy",
+                    "icon": "/icons/skills/spacy.png"
+                },
+                {
+                    "skill": "Neo4J",
+                    "icon": "/icons/skills/neo4j.png"
+                }
+            ],
+            "role": "to add",
+            "process": "to add",
+            "result": "to add"
         },
         {
             "title": "Localite",
-            "img": "localite",
+            "img": "/images/projects/localite.png",
             "img_alt": "Localite Product",
             "description": "Localite is an online community platform designed to help people connect, share, and learn from others in their local area.",
             "link": null,
-            "tags": ["tech"]
+            "tags": ["tech"],
+            "overview" : "to add",
+            "additional_imgs": [
+                "/images/projects/localite.png",
+                "/images/projects/localite-1.png",
+                "/images/projects/localite-2.png"
+            ],
+            "toolkit": [
+                {
+                    "skill": "PHP",
+                    "icon": "/icons/skills/php.png"
+                },
+                {
+                    "skill": "Laravel",
+                    "icon": "/icons/skills/laravel.png"
+                },
+                {
+                    "skill": "AWS",
+                    "icon": "/icons/skills/aws.png"
+                }
+
+            ],
+            "role": "to add",
+            "process": "to add",
+            "result": "to add"
         },
         {
             "title": "The Grand Appeal",
-            "img": "grandappeal",
+            "img": "/images/projects/grandappeal.png",
             "img_alt": "Grand Appeal Product",
             "description": "Developing an addition to the Grand Appeals website to increase user engagement.",
             "link": null,
-            "tags": ["tech"]
-        },
-        {
-            "title": "Planana",
-            "img": "planana",
-            "img_alt": "Planana Product",
-            "description": "Planana is a website designed to help busy people quickly plan healthy meals for the week.",
-            "link": null,
-            "tags": ["tech"]
+            "tags": ["tech"],
+            "overview" : "to add",
+            "additional_imgs": [
+                "/images/projects/grandappeal.png",
+                "/images/projects/grandappeal-1.png"
+            ],
+            "toolkit": [
+                {
+                    "skill": "Java",
+                    "icon": "/icons/skills/java.png"
+                }
+            ],
+            "role": "to add",
+            "process": "to add",
+            "result": "to add"
         },
         {
             "title": "Utopi",
-            "img": "utopi",
+            "img": "/images/projects/utopi.png",
             "img_alt": "Utopi Product",
             "description": "Utopi develops sustainable, modular toys for children.",
             "link": null,
-            "tags": ["design", "business"]
+            "tags": ["design", "business"],
+            "overview" : "to add",
+            "additional_imgs": [
+                "/images/projects/utopi.png",
+                "/images/projects/utopi-1.png",
+                "/images/projects/utopi-5.png"
+            ],
+            "toolkit": [
+                {
+                    "skill": "Maya",
+                    "icon": "/icons/skills/maya.png"
+                },
+                {
+                    "skill": "Canva",
+                    "icon": "/icons/skills/canva.png"
+                },
+                {
+                    "skill": "Wix",
+                    "icon": "/icons/skills/wix.png"
+                }
+            ],
+            "role": "to add",
+            "process": "to add",
+            "result": "to add"
         },
         {
             "title": "UniBoost",
-            "img": "uniboost",
+            "img": "/images/projects/uniboost.png",
             "img_alt": "UniBoost Product",
             "description": "UniBoost is an app designed to help students prioritise and care for their mental wellbeing.",
             "link": null,
-            "tags": ["design", "business"]
+            "tags": ["design", "business"],
+            "overview" : "to add",
+            "additional_imgs": [],
+            "toolkit": [
+                {
+                    "skill": "Marvel",
+                    "icon": "/icons/skills/marvel.png"
+                },
+                {
+                    "skill": "Canva",
+                    "icon": "/icons/skills/canva.png"
+                },
+                {
+                    "skill": "Wix",
+                    "icon": "/icons/skills/wix.png"
+                }
+
+            ],
+            "role": "to add",
+            "process": "to add",
+            "result": "to add"
         },
         {
             "title": "3D Modelling",
-            "img": "3dmodelling",
+            "img": "/images/projects/3dmodelling.png",
             "img_alt": "3D Modelling Product",
             "description": "Working with Maya to develop realistic 3d models and animations.",
             "link": null,
-            "tags": ["design"]
-        },
-        {
-            "title": "Camp Greenwoods",
-            "img": "greenwoods",
-            "img_alt": "Camp Greenwoods Product",
-            "description": "While working at a Children's summer camp in China, I set up a UK Counsellor recruitment project",
-            "link": null,
-            "tags": ["business"]
+            "tags": ["design"],
+            "overview" : "to add",
+            "additional_imgs": [
+                "/images/projects/3dmodelling.png",
+                "/images/projects/3dmodelling-1.jpg",
+                "/images/projects/3dmodelling-2.png"
+            ],
+            "toolkit": [
+                {
+                    "skill": "Maya",
+                    "icon": "/icons/skills/maya.png"
+                }
+            ],
+            "role": "to add",
+            "process": "to add",
+            "result": "to add"
         }
     ]
 }

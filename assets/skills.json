@@ -1,0 +1,52 @@
+{
+    "skills": [
+        {
+            "skill": "Jira",
+            "icon": "icons/skills/jira.png"
+        },
+        {
+            "skill": "Confluence",
+            "icon": "icons/skills/confluence.png"
+        },
+        {
+            "skill": "Coda.io",
+            "icon": "icons/skills/coda.png"
+        },
+        {
+            "skill": "Miro",
+            "icon": "icons/skills/miro.png"
+        },
+        {
+            "skill": "Excel",
+            "icon": "icons/skills/excel.png"
+        },
+        {
+            "skill": "Canva",
+            "icon": "icons/skills/canva.png"
+        },
+        {
+            "skill": "PHP",
+            "icon": "/icons/skills/php.png"
+        },
+        {
+            "skill": "Laravel",
+            "icon": "/icons/skills/laravel.png"
+        },
+        {
+            "skill": "VueJS",
+            "icon": "/icons/skills/vue.png"
+        },
+        {
+            "skill": "Nuxt",
+            "icon": "/icons/skills/nuxt.png"
+        },
+        {
+            "skill": "Python",
+            "icon": "/icons/skills/python.png"
+        },
+        {
+            "skill": "FastAPI",
+            "icon": "/icons/skills/fastapi.svg"
+        }
+    ]
+}

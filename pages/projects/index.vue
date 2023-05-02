@@ -1,0 +1,48 @@
+<template>
+    <div class='m-10 xl:mx-32'>
+        <div class='text-lg dark:text-white flex mb-5'>
+            <div v-for='option in filterOptions' :key='option' class='w-32 p-1.5 border-solid rounded-md border-2 text-center h-10 dark:bg-black mr-5 hover:bg-orange hover:border-orange hover:dark:border-orange hover:text-white hover:dark:bg-orange' :class="filter === option ? 'border-orange' : 'border-dblue dark:border-black'" @click='filter = option'>
+                {{option}}
+            </div>
+        </div>
+        <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+            <div v-for='(project, index) in projects' :key='project'>
+                <ProjectCard :project='project' @click="$router.push({path: `projects/${index}`})"/>
+            </div>
+        </div>
+    </div> 
+</template>
+
+<script>
+import projData from '/assets/projects.json' assert {type: 'json'}
+export default { 
+    data() {
+        return {
+            projects: projData.projects,
+            filterOptions: ['All', 'Tech', 'Design', 'Business'],
+            filter: 'All',
+        }
+    },
+    watch: {
+        filter() {
+            switch (this.filter) {
+                case 'Tech':
+                    this.projects = projData.projects.filter(project => project.tags.includes('tech'))
+                    break
+                case 'Design':
+                    this.projects = projData.projects.filter(project => project.tags.includes('design'))
+                    break
+                case 'Business':
+                    this.projects = projData.projects.filter(project => project.tags.includes('business'))
+                    break
+                default:
+                    this.projects = projData.projects
+            }
+        }
+    },
+}
+</script>
+
+<style>
+
+</style>

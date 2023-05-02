@@ -1,0 +1,16 @@
+{ 
+    "education" : [
+        {
+            "institution": "University of Bristol",
+            "subject": "Computer Science & Innovation MEng",
+            "result": "1st Class Honours",
+            "date": "Sept 2011 - June 2016"
+        },
+        {
+            "institution": "Windsor Girls' School",
+            "subject": "3 A Levels",
+            "result": "Maths (A*), Physics (A), English (B)",
+            "date": "Sept 2011 - June 2016"
+        }
+    ]
+}
