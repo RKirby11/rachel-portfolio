@@ -1,8 +1,8 @@
 <template>
-    <nav class='width-full h-16 flex justify-between items-center px-10 py-5 dark:shadow-2xl'>
+    <nav class='width-full h-16 flex justify-between items-center px-10 py-5 bg-white dark:bg-charcoal shadow-md dark:shadow-2xl'>
         <div class='flex'>
             <NuxtLink to='/' 
-                class='text-white text-center tracking-wider text-xl rounded-md bg-orange w-64 py-2 mr-4'>
+                class='text-white text-center tracking-wider text-xl rounded-md bg-orange w-64 py-1.5 mr-4 border-2 border-solid border-orange hover:bg-white hover:text-charcoal hover:dark:text-white hover:dark:bg-charcoal'>
                 <b>Rachel </b>Kirby
             </NuxtLink>
             <div class='flex items-center'>
@@ -17,20 +17,20 @@
         <div class='hidden lg:flex'>
             <NuxtLink 
                 to='/projects' 
-                class='w-32 rounded-md bg-white dark:bg-black border-2 border-solid py-1.5 text-center text-xl mr-4 hover:border-dblue hover:dark:bg-dblue'
-                :class="page == '/projects' ? 'border-dblue' : 'border-white dark:border-black'">
+                class='w-32 rounded-md bg-grey dark:bg-black border-2 border-solid py-1.5 text-center text-xl mr-4 hover:border-dblue hover:dark:bg-dblue'
+                :class="page == '/projects' ? 'border-dblue' : 'border-grey dark:border-charcoal'">
                 Projects
             </NuxtLink>
             <NuxtLink 
                 to='/about'
-                class='w-32 rounded-md bg-white dark:bg-black border-2 border-solid py-1.5 text-center text-xl mr-4 hover:border-dblue hover:dark:bg-dblue'
-                :class="page == '/about' ? 'border-dblue' : 'border-white dark:border-black'">
+                class='w-32 rounded-md bg-grey dark:bg-black border-2 border-solid py-1.5 text-center text-xl mr-4 hover:border-dblue hover:dark:bg-dblue'
+                :class="page == '/about' ? 'border-dblue' : 'border-grey dark:border-charcoal'">
                 About
             </NuxtLink>
             <NuxtLink 
                 to='/contact'
-                class='w-32 rounded-md bg-white dark:bg-black border-2 border-solid py-1.5 text-center text-xl hover:border-dblue hover:dark:bg-dblue'
-                :class="page == '/contact' ? 'border-dblue' : 'border-white dark:border-black'">
+                class='w-32 rounded-md bg-grey dark:bg-black border-2 border-solid py-1.5 text-center text-xl hover:border-dblue hover:dark:bg-dblue'
+                :class="page == '/contact' ? 'border-dblue' : 'border-grey dark:border-charcoal'">
                 Contact
             </NuxtLink>
         </div>

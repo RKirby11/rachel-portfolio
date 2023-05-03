@@ -1,5 +1,5 @@
 <template>
-    <div class='m-10 xl:mx-32'>
+    <div class='m-10 mt-16 xl:mx-32'>
         <NuxtLink to='/projects' class='flex items-center hover:underline hover:cursor-pointer mb-5'>
             <img src='/icons/arrow-left.svg' class='invert h-5 mr-2'/>
             Back to All Projects
@@ -40,7 +40,7 @@
     </div>
 </template>
 <script>
-import projData from '/assets/projects.json' assert {type: 'json'}
+import projData from '/data/projects.json' assert {type: 'json'}
 export default {
     data() {
         return {

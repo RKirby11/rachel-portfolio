@@ -1,25 +1,25 @@
 <template>
     <div 
-        class="h-52 rounded-md shadow-light_2xl dark:shadow-2xl bg-no-repeat bg-cover bg-center hover:animate-bounce_sm hover:cursor-pointer" 
+        class="h-52 rounded-md shadow-lg dark:shadow-xl bg-no-repeat bg-cover bg-center hover:animate-bounce_sm hover:cursor-pointer" 
         :class="`bg-[url('${project.img}')]`" 
         @mouseover="hover = true" 
         @mouseleave="hover = false"
     >
         <div 
             v-if='hover' 
-            class="h-full w-full p-4 flex flex-col justify-between rounded-md bg-dblue" 
+            class="h-full w-full p-4 flex flex-col justify-between rounded-md bg-dblue text-white" 
         >
             <div class="flex-col">
-                <h3 class='text-xl font-bold text-white'>{{ project.title }}</h3>
-                <p class='text-white'>{{project.description}}</p>
+                <h3 class='text-xl font-bold'>{{ project.title }}</h3>
+                <p>{{project.description}}</p>
             </div>
             <div class='flex justify-between'>
                 <div class='flex'>
                     <img src='/icons/cursor-arrow.svg' class='invert h-5 mt-1' alt='cursor icon' />
-                    <i class='text-white'>Click to read</i>
+                    <i>Click to read</i>
                 </div>
                 <div class='flex'>
-                    <div v-for='tag in project.tags' :key='tag' class='w-fit bg-white text-charcoal dark:bg-charcoal dark:text-white rounded-md px-2 py-1 text-sm mr-2'>
+                    <div v-for='tag in project.tags' :key='tag' class='w-fit bg-charcoal text-white text-sm rounded-md px-2 py-1  mr-2'>
                             <i>{{ tag }}</i>
                     </div>
                 </div>

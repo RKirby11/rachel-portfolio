@@ -19,8 +19,8 @@ module.exports = {
             boxShadow: {
                 '2xl': '0px 25px 50px 15px rgba(0, 0, 0, 0.3)',
                 '3xl': '0px 35px 60px 15px rgba(0, 0, 0, 1)',
-                'light_2xl': '0px 25px 50px 15px rgba(0, 0, 0, 0.1)',
-                'light_3xl': '0px 35px 60px 15px rgba(0, 0, 0, 0.1)',
+                'light_2xl': '0px 15px 40px 15px rgba(0, 0, 0, 0.05)',
+                'light_3xl': '0px 25px 50px 15px rgba(0, 0, 0, 0.1)',
             },
             fontFamily: {
                 'poppins': ['Poppins']
@@ -28,8 +28,8 @@ module.exports = {
             colors: {
                 charcoal: '#11151c',
                 dblue: '#364156',
-                lblue: '#769FB6',
-                cream: '#EEEBD3',
+                lblue: '#e3eef1',
+                grey: '#f9fbfc',
                 orange: '#A33B20',
             },
             animation: {

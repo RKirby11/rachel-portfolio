@@ -1,5 +1,5 @@
 <template>
-    <div class='m-10 xl:mx-32'>
+    <div class='m-10 mt-16 xl:mx-32'>
         <div class='text-lg dark:text-white flex mb-5'>
             <div v-for='option in filterOptions' :key='option' class='w-32 p-1.5 border-solid rounded-md border-2 text-center h-10 dark:bg-black mr-5 hover:bg-orange hover:border-orange hover:dark:border-orange hover:text-white hover:dark:bg-orange' :class="filter === option ? 'border-orange' : 'border-dblue dark:border-black'" @click='filter = option'>
                 {{option}}
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import projData from '/assets/projects.json' assert {type: 'json'}
+import projData from '/data/projects.json' assert {type: 'json'}
 export default { 
     data() {
         return {
