@@ -1,7 +1,7 @@
 <template>
     <div 
         class="h-52 rounded-md shadow-lg dark:shadow-xl bg-no-repeat bg-cover bg-center hover:animate-bounce_sm hover:cursor-pointer" 
-        :class="`bg-[url('${project.img}')]`" 
+        :class="`bg-[url('${project.imgs[0]}')]`" 
         @mouseover="hover = true" 
         @mouseleave="hover = false"
     >
@@ -19,7 +19,7 @@
                     <i>Click to read</i>
                 </div>
                 <div class='flex'>
-                    <div v-for='tag in project.tags' :key='tag' class='w-fit bg-charcoal text-white text-sm rounded-md px-2 py-1  mr-2'>
+                    <div v-for='tag in project.tags' :key='tag' class='w-fit bg-lblue dark:bg-charcoal text-charcoal dark:text-white text-sm rounded-md px-2 py-1  mr-2'>
                             <i>{{ tag }}</i>
                     </div>
                 </div>

@@ -14,8 +14,7 @@
             </div>
         </div>
 
-        <h2 class='text-xl font-bold mt-10'>Skills & Competencies</h2>
-        <div class='w-16 bg-dblue dark:bg-orange h-1 mb-4'/>
+        <SectionTitle title='Skills & Competencies'/>
         <div class="w-full shadow-xl dark:shadow-3xl bg-white dark:bg-charcoal rounded-lg pt-6" >
             <div class='grid grid-cols-3 md:grid-cols-6 text-center'>
                 <div v-for='skill in skills' :key='skill.skill' class='flex flex-col flex-wrap items-center mb-6'>
@@ -24,8 +23,7 @@
             </div>
         </div>
 
-        <h2 class='text-xl font-bold mt-6'>Recent Projects</h2>
-        <div class='w-16 bg-dblue dark:bg-orange h-1 mb-4'/>
+        <SectionTitle title='Recent Projects'/>
         <div class="bg-lblue dark:bg-orange shadow-lg dark:shadow-3xl rounded-lg py-6 px-5 mb-2">
             <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 <div v-for='(project, index) in recentProjects' :key='project.title'>

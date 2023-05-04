@@ -16,6 +16,12 @@ module.exports = {
             greenwoods: "url('/images/projects/greenwoods.png')",
         },
         extend: {
+            spacing: {
+                '9px' : '9px',
+                '195px' : '195px',
+                '160px' : '160px',
+                '365px' : '365px',
+            },
             boxShadow: {
                 '2xl': '0px 25px 50px 15px rgba(0, 0, 0, 0.3)',
                 '3xl': '0px 35px 60px 15px rgba(0, 0, 0, 1)',
@@ -34,6 +40,7 @@ module.exports = {
             },
             animation: {
                 bounce_sm: 'bounce_sm 1s ease-in-out infinite',
+                wiggle: 'wiggle 1s ease-in-out infinite',
             },
             keyframes: {
                 bounce_sm: {
@@ -43,7 +50,15 @@ module.exports = {
                     '50%': {
                         transform: 'translateY(-5%)',
                     }
-}
+                },
+                wiggle: {
+                    '25%': {
+                        transform: 'rotate(3deg)',
+                    },
+                    '75%': {
+                        transform: 'rotate(-3deg)',
+                    },
+                }
             }
         },
     },

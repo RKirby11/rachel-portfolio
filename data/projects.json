@@ -2,13 +2,14 @@
     "projects" : [
         {
             "title": "Graphium",
-            "img": "/images/projects/graphium.png",
-            "img_alt": "Graphium Product",
-            "description": "Graphium is B2B SaaS Platform designed to manage and visualise enterprises unstructured data.",
+            "description": "A B2B SaaS Platform designed to resurface the crucial insights hidden across enterprises' unstructured data.",
             "link": "https://graphium.ai/",
             "tags": ["tech", "business"],
-            "overview" : "to add",
-            "additional_imgs" : [
+            "overview" : [
+                "In 2020 I started a tech start-up with two co-founders. Over the course of 2 years we obtained £250K pre-seed investment; developed a working product; trialled the product with research teams across public and private sector, and onboarded paying customers.",
+                "During this time we were also finalists for the 'Innovative' and 'Technology Services' catagories of the Welsh StartUp Awards, were titled a 'Welsh Rising Star' by TechNation."
+            ],
+            "imgs" : [
                 "/images/projects/graphium.png",
                 "/images/projects/graphium-1.jpeg",
                 "/images/projects/graphium-2.jpeg",
@@ -53,19 +54,37 @@
                     "icon": "/icons/skills/fastapi.svg"
                 }
             ],
-            "role" : "to add",
-            "process": "to add",
-            "result": "to add"
+            "role" : 
+                "As Founder and Director of Operations, I worked in a variety of roles across the business. Some of my key responsibilities included planning the product roadmap; developing agile working infrastructures to manage the development team, communicating with key stakeholders such as investors, partners, and customers, and managing the day-to-day operations of the business.",
+            "process": [
+                "Working with a variety of different clients to understand the challenges they faced and their current workflows.",
+                "Ideating a number of potential solutions to their challenges.",
+                "Validating the potential market opportunity for these solutions through primary and secondary research.",
+                "Utilising our research to identify the most promising business opportunity.",
+                "Creating initial wireframes and user journeys to ensure the solution met the client needs.",
+                "Creating initial feature prototypes to test with the users.",
+                "Developing a concise business plan and strategy to turn the technology into a profitable business.",
+                "Pitching to investors to ontain pre-seed investment.",
+                "Developing product roadmaps and sprint plans to guide a our growing development team.",
+                "Supporting the development team using daily stand ups and fortnighty sprint restrospectives.",
+                "Releasing the MVP to a number of trial partners including teams at OCSA, Innovate UK, and Cambridge Consultants.",
+                "Onboarding paying customers and managing our financial accounts."
+            ],
+            "result": [
+                "Research teams deal with a vast amount of qualitative research data and, due to a lack of structure of this data, it's incredibly difficult to keep track of. Teams can waste precious time trying to rediscover the datapoints they need within the mass of information, often without success. This not only slows the research down, but can lead to the loss of key insights.",
+                "To solve this problem, Graphium was created to automatically structure and visualise their data. Research teams can import their unstructured qualitative research data into the platform for it to be automatically structured and catagorised according to key topics.",
+                "The platform offers various interactive and searchable visualisations so users can quickly discover relevant datapoints. The visualisations are also designed to help uncover new hidden insights across the data, such as gaps, trends, and interconnections - supporting users to make data driven decisions"
+            ]
         },
         {
             "title": "Graph Visualisation",
-            "img": "/images/projects/graphvis.png",
-            "img_alt": "Knowledge Graph",
             "description": "Utilising D3 and Neo4J Graph Databases to create knowledge graph visualisations based on a users context.",
             "link": null,
             "tags": ["tech"],
-            "overview" : "to add",
-            "additional_imgs": [
+            "overview" : [
+                "One of the core features of the 'Graphium' platform is the ability to visualise the connections across the users' datasets."
+            ],
+            "imgs": [
                 "/images/projects/graphvis.png",
                 "/images/projects/graphvis-2.png",
                 "/images/projects/graphvis-3.png",
@@ -85,19 +104,29 @@
                     "icon": "/icons/skills/neo4j.png"
                 }
             ],
-            "role": "to add",
-            "process": "to add",
-            "result": "to add"
+            "role": 
+                "I was responsible for implementing various graph visualisations within the product, but primarily the 'Knowledge Graph' visualisations. This visualisation depicts the connections between users, the data they have uploaded, and relavant topics to the data.",
+            "process": [
+                "Planning the data structure within the graph database, considering how the efficiency of reading and writing to the database can be maximised through the properties of, and relationships between, nodes.",
+                "Using D3 to create a force-directed graph, populated with data from the graph database.",
+                "Implementing functionality for users to interact with the graph. This included the ability to zoom, pan, and drag nodes. I also implemented the ability to filter the graph based on the properties of the nodes and relationships.",
+                "Dynamically update the data visualised dependent on the user input and settings."
+            ],
+            "result": [
+                "The result of the feature was a highly interactive and intuitive graph visualisation that allowed users to quickly explore the connections between their data. This feature was a key selling point of the platform, and was well received by users."
+            ]
         },
         {
             "title": "Automatic Topic Extraction",
-            "img": "/images/projects/topicextraction.png",
-            "img_alt": "Topic Extraction Product",
-            "description": "Utilising Spacy.io and to generate a custom Named Entity Recognition model.",
+            "description": "Utilising Spacy.io to generate a custom Named Entity Recognition model.",
             "link": null,
             "tags": ["tech"],
-            "overview" : "to add",
-            "additional_imgs": [],
+            "overview" : [
+                "In order to structure a set of qualitative data, the 'Graphium' platform needed the ability to extract key topics and map the relationships between them."
+            ],
+            "imgs": [
+                "/images/projects/topicextraction.png"
+            ],
             "toolkit": [
                 {
                     "skill": "Python",
@@ -112,19 +141,29 @@
                     "icon": "/icons/skills/neo4j.png"
                 }
             ],
-            "role": "to add",
-            "process": "to add",
-            "result": "to add"
+            "role": 
+                "I was responsible for experimenting with a variety of NLP tools and models, determining the most suitable implementation for the task, and implementing the final solution.",
+            "process": [ 
+                "Experimenting with a number of NLP tools for topic modelling and classification, such as tokenisation, Named Entity Recognition (NER), and Latent Semantic Analysis (LSA).",
+                "After creating proof of concepts for each tool and model, I determined the most suitable solution for our platform - dependent on speed, efficiency, and accuracy.",
+                "The chosen process was to use a mixture of ready-made Spacy models, alongside a custom-made NER model using Spacy training pipelines.",
+                "A pre-defined topic ontology was utilised to determine which entities were suitable topics",
+                "I developed a proprietary algorithm, utilising the pre-defined ontology, to determine relevancy scores between the extracted topics and the document.",
+                "The final feature was implemented in Python, with the results stored in a Neo4J graph database."
+            ],
+            "result": [
+                "The Graphium platform was able to extract key topics with relevancy scores, and some additional 'keyphrases' of interest. Later, I was able to extend the feature by enabling the user to personalise the topic structure to their use case and context by updating the pre-defined ontology." 
+            ]
         },
         {
             "title": "Localite",
-            "img": "/images/projects/localite.png",
-            "img_alt": "Localite Product",
-            "description": "Localite is an online community platform designed to help people connect, share, and learn from others in their local area.",
+            "description": "An online community platform designed to help people connect, share, and learn from others in their local area.",
             "link": null,
             "tags": ["tech"],
-            "overview" : "to add",
-            "additional_imgs": [
+            "overview" : [
+                "A personal project exploring how to build communities within local areas, and enable people to meet others with similar interests."
+            ],
+            "imgs": [
                 "/images/projects/localite.png",
                 "/images/projects/localite-1.png",
                 "/images/projects/localite-2.png"
@@ -144,19 +183,28 @@
                 }
 
             ],
-            "role": "to add",
-            "process": "to add",
-            "result": "to add"
+            "role": 
+                "I developed this product whilst at a start up incubator to practise designing, developing and presenting a web platform",
+            "process": [ 
+                "Develop initial wireframes and design.",
+                "Build the key features in Laravel.",
+                "Deploy the platform to AWS.",
+                "Present the platform to an audience of entrepeneurs and investors."
+            ],
+            "result": [
+                "My platform was voted the best product of the cohort, over 15 other presentations. I did not take the product further than this, but it was a great learning experience for me to develop a product from start to finish, and present it to an audience."
+            ]
         },
         {
             "title": "The Grand Appeal",
-            "img": "/images/projects/grandappeal.png",
-            "img_alt": "Grand Appeal Product",
-            "description": "Developing an addition to the Grand Appeals website to increase user engagement.",
+            "description": "Developing an addition to The Grand Appeal's website to increase user engagement.",
             "link": null,
             "tags": ["tech"],
-            "overview" : "to add",
-            "additional_imgs": [
+            "overview" : [
+                "In 2018, The Grand Appeal (a Bristol based charity) worked with Aardman Studios to set up their third Arts Trail in Bristol, raising money for Bristol Children's Hospital.",
+                "As a team of 6 Bristol Computer Science students, we were asked to design and develop a program for the Arts Trail website to encourage more people to pursue the trail."
+            ],
+            "imgs": [
                 "/images/projects/grandappeal.png",
                 "/images/projects/grandappeal-1.png"
             ],
@@ -166,19 +214,31 @@
                     "icon": "/icons/skills/java.png"
                 }
             ],
-            "role": "to add",
-            "process": "to add",
-            "result": "to add"
+            "role": 
+                "My role focused on developing a concise product plan and report to be presented to the client, as well as developing various backend features of the tool.",
+            "process": [ 
+                "Collated a list of requirements from our client and other stakeholders.",
+                "Brainstormed ideas based on these requirements and presented them to the client.",
+                "Developed the tool, using agile methods to manage the planning and development.",
+                "Presented a product demo for the client."
+            ],
+            "result": [
+                "We utilised photos uploaded by visitors of the art trail to uncover a mystery 'Wallace and Gromit' themed collage. This created a motivation for users to engage with the trail and upload photos which could be shared for social media marketing.",
+                "The idea developed from our insights that users were often families with young children who were looking a for a way to add gamification to the walk, entertain their children, and allow the whole family to interact and work together.",
+                "The program used by The Grand Appeal during the arts trail and you can see the results, as well as the working of our project, above."
+            ],
+            "video": "https: //www.youtube.com/embed/-FYH2tmBgMc"
         },
         {
             "title": "Utopi",
-            "img": "/images/projects/utopi.png",
-            "img_alt": "Utopi Product",
             "description": "Utopi develops sustainable, modular toys for children.",
             "link": null,
             "tags": ["design", "business"],
-            "overview" : "to add",
-            "additional_imgs": [
+            "overview" : [
+                "Plastic toys account for 90% of the toy market and are often discarded after a few months of use.",
+                "Utopi aims to reduce this waste by creating modular toys, built with sustainable materials, that can be reconfigured to support the changing requirements of a childs development."
+            ],
+            "imgs": [
                 "/images/projects/utopi.png",
                 "/images/projects/utopi-1.png",
                 "/images/projects/utopi-5.png"
@@ -197,19 +257,38 @@
                     "icon": "/icons/skills/wix.png"
                 }
             ],
-            "role": "to add",
-            "process": "to add",
-            "result": "to add"
+            "role": 
+                "Within a team of two others, I was individually responsible for the development of our website and the 3D modelling of our product. Additionally, I worked alongside my team to undergo in-depth primary and secondary research to understand our target market, our competitors, and the wider social and environmental impacts of our product.",
+            "process": [ 
+                "Secondary PESTEL analysis of the chidren's toy market.",
+                "Secondary research into sustainable materials and effective circular design practices.",
+                "Primary research (surveys, probes, and prototype testing) with parents in our target market.",
+                "Development of user personas based on our research.",
+                "Ideation of product designs and business models.",
+                "Development of a 3D model of our product (as well as some physical prototypes).",
+                "Development of a website to showcase our product and business.",
+                "Analysis of the feasibility and viability of the product and business.",
+                "Final report and presentation of our product and business."
+            ],
+            "result": [
+                "We designed 4 toys aimed at supporting different stages of children's development. These toys were housed within a modular box, which itself could be used for a variety of forms of play. The individual toys within the box could be returned once the child grew bored, and then re-used for another child - as such they were designed to be durable and easily to clean.",
+                "Various incentives, such as discounts on new toys after a return, or opportunities for collective gift giving for childrens birthdays, were designed to encourage parents to switch to Utopi toys.",
+                "We developed a physical prototype for some of the toys and gained real feedback from parents and children, as well as feedback from a number of children's toy sellers."
+            ],
+            "video": "https://www.youtube.com/embed/zG5cO2djp1M"
         },
         {
             "title": "UniBoost",
-            "img": "/images/projects/uniboost.png",
-            "img_alt": "UniBoost Product",
             "description": "UniBoost is an app designed to help students prioritise and care for their mental wellbeing.",
             "link": null,
             "tags": ["design", "business"],
-            "overview" : "to add",
-            "additional_imgs": [],
+            "overview" : [
+                "There was a 210% increase in students dropping out of Universities for mental health related reasons between 2010 and 2015. Following interviews with psychotherapists and mental health organisations around Bristol we discovered one of the biggest impacts on students was a lack of a support network.",
+                "UniBoost aims to tackle this problem by creating an accessible platform for students that connects them with their university and city, and encourages them to prioritise their mental wellbeing."
+            ],
+            "imgs": [
+                "/images/projects/uniboost.png"
+            ],
             "toolkit": [
                 {
                     "skill": "Marvel",
@@ -225,19 +304,33 @@
                 }
 
             ],
-            "role": "to add",
-            "process": "to add",
-            "result": "to add"
+            "role": 
+                "Within a team of two others (an Anthropology student and a Psychology student), I was responsible for the development of the app prototype and the website. I also worked alongside my team to conduct primary and secondary research, develop user personas, and ideate the product and business model.",
+            "process": [
+                "Conduct primary research interviews with students, mental health professionals, and university organisations.",
+                "Conduct secondary research into the mental health of students and the support available to them.",
+                "Utilise collected research data to idenitify key problems and opportunities.",
+                "Ideate potential software solutions and develop app prototypes using Marvel.",
+                "Conduct prototype trials with university students to measure the impact of the solution.",
+                "Develop a potential business strategy and map expected financial forecasts.",
+                "Develop a website to showcase our product and business.",
+                "Present a business plan and pitch to a board of university staff and business professionals."
+            ],
+            "result": [
+                "The UniBoost app encouraged University Students to complete challenges aimed at improving their mental wellbeing, such as cooking a healthy meal, doing some exercise, having a mindfulness session, or meeting up with a friend. The incentive to complete these challenges were deals and discounts offered by local businesses.",
+                "The app also connected students with their university by making key resources (student health organisations and support systems) easily accessible within the app.",
+                "The prototype receieved positive feedback from trial users and from the board of university staff and business professionals."
+            ]
         },
         {
             "title": "3D Modelling",
-            "img": "/images/projects/3dmodelling.png",
-            "img_alt": "3D Modelling Product",
             "description": "Working with Maya to develop realistic 3d models and animations.",
             "link": null,
             "tags": ["design"],
-            "overview" : "to add",
-            "additional_imgs": [
+            "overview" : [
+                "to add"
+            ],
+            "imgs": [
                 "/images/projects/3dmodelling.png",
                 "/images/projects/3dmodelling-1.jpg",
                 "/images/projects/3dmodelling-2.png"
@@ -249,8 +342,11 @@
                 }
             ],
             "role": "to add",
-            "process": "to add",
-            "result": "to add"
+            "process": [ "to add"],
+            "result": [
+                "to add"
+            ],
+            "video" : "https://www.youtube.com/embed/4jOqVVh4M1s"
         }
     ]
 }

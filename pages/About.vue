@@ -22,17 +22,17 @@
             </div>
         </div>
         <div class='grid grid-cols-1 lg:grid-cols-2 mb-12'>
-            <div>
-                <h2 class='text-xl font-bold mt-10'>Work Experience</h2>
-                <div class='w-16 bg-dblue dark:bg-lblue h-1 mb-4'/>
-                <div class='flex justify-center mb-4 mx-10' v-for='item in work' :key="item.company">
+            <div class='relative lg:mr-5'>
+                <SectionTitle title='Employments'/>
+                <div class='hidden sm:block absolute w-1 h-[365px] left-[9px] top-[160px] bg-dblue'></div>
+                <div class='flex justify-center mb-4' v-for='item in work' :key="item.company">
                     <WorkCard :item='item'/>
                 </div>
             </div>
-            <div>
-                <h2 class='text-xl font-bold mt-10'>Education</h2>
-                <div class='w-16 bg-dblue darl:bg-lblue h-1 mb-4'/>
-                <div class='flex justify-center mb-4 mx-10' v-for='item in education' :key="item.institution">
+            <div class='relative lg:ml-5'>
+                <SectionTitle title='Education'/>
+                <div class='hidden sm:block absolute w-1 h-[195px] left-[9px] top-[160px] bg-dblue'></div>
+                <div class='flex justify-center mb-4' v-for='item in education' :key="item.institution">
                     <EducationCard :item='item'/>
                 </div>
             </div>
@@ -58,17 +58,17 @@ export default {
         this.cvUrl = runtimeConfig.public.baseUrl + '/cv.pdf';
     },
     methods: {
-        async test() {
-            await $fetch( '/api/update', {method: 'GET'})
-            .then((response) => {
-                console.log('caught response');
-                console.log(response);
-            })
-            .catch((error) => {
-                console.log('caught error');
-                console.log(error.data)
-            });
-        },
+        // async test() {
+        //     await $fetch( '/api/update', {method: 'GET'})
+        //     .then((response) => {
+        //         console.log('caught response');
+        //         console.log(response);
+        //     })
+        //     .catch((error) => {
+        //         console.log('caught error');
+        //         console.log(error.data)
+        //     });
+        // },
     }
 }
 </script>
