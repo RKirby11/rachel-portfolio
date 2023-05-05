@@ -1,6 +1,6 @@
 <template>
     <div 
-        class="h-52 rounded-md shadow-lg dark:shadow-xl bg-no-repeat bg-cover bg-center hover:animate-bounce_sm hover:cursor-pointer" 
+        class="h-60 rounded-md shadow-lg dark:shadow-xl bg-no-repeat bg-cover bg-center hover:animate-bounce_sm hover:cursor-pointer" 
         :class="`bg-[url('${project.imgs[0]}')]`" 
         @mouseover="hover = true" 
         @mouseleave="hover = false"

@@ -6,7 +6,7 @@
                     <div>
                         <h2 class='text-2xl font-bold '>I'm a software engineer and product manager with 3 years experience working in Tech Start-Ups</h2>
                         <br>
-                        <p>Currently, I'm a co-founder of Graphium Technologies LTD. A B2B SaaS company that helps businesses make better use of their unstructured research data.</p>
+                        <p>Currently a co-founder of Graphium Technologies LTD. A B2B SaaS company that helps businesses make better use of their unstructured research data.</p>
                     </div>
                     <div class='flex'>
                         <NuxtLink :to='cvUrl' target='_blank' class='w-32 border-solid border-2 border-orange h-10 rounded-md text-center p-1.5 mt-5 hover:border-orange hover:text-white hover:bg-orange mr-5'>View CV</NuxtLink>
@@ -55,20 +55,7 @@ export default {
     },
     created() {
         let runtimeConfig = useRuntimeConfig();
-        this.cvUrl = runtimeConfig.public.baseUrl + '/cv.pdf';
-    },
-    methods: {
-        // async test() {
-        //     await $fetch( '/api/update', {method: 'GET'})
-        //     .then((response) => {
-        //         console.log('caught response');
-        //         console.log(response);
-        //     })
-        //     .catch((error) => {
-        //         console.log('caught error');
-        //         console.log(error.data)
-        //     });
-        // },
+        this.cvUrl = runtimeConfig.public.baseUrl + '/files/cv.pdf';
     }
 }
 </script>

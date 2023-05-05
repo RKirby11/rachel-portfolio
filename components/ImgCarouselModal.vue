@@ -9,9 +9,9 @@
                     <div class='h-4/5 flex justify-center items-center '>
                         <img :src="mainImg" class='h-full object-contain rounded-md'/>
                     </div>
-                    <div class='flex justify-center'>
-                        <img @click="updateImgIndex('left')" src='/icons/chevron-double-left.svg' class='dark:invert h-8 hover:cursor-pointer mr-8'/>
-                        <img @click="updateImgIndex('right')" src='/icons/chevron-double-right.svg' class='dark:invert h-8 hover:cursor-pointer ml-8'/>
+                    <div class='flex justify-center h-10'>
+                        <img v-if='imgs.length > 1'  @click="updateImgIndex('left')" src='/icons/chevron-double-left.svg' class='dark:invert h-8 hover:cursor-pointer mr-8'/>
+                        <img v-if='imgs.length > 1'  @click="updateImgIndex('right')" src='/icons/chevron-double-right.svg' class='dark:invert h-8 hover:cursor-pointer ml-8'/>
                     </div>
                 </div>
             </div>

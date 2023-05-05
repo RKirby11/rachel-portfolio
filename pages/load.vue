@@ -2,7 +2,7 @@
     <div>
         <div class="h-52 bg-no-repeat bg-cover bg-center bg-[url('/images/projects/graphium.png')]"/>
         <div class="h-52 bg-no-repeat bg-cover bg-center bg-[url('/images/projects/graphvis.png')]"/>
-        <div class="h-52 bg-no-repeat bg-cover bg-center bg-[url('/images/projects/topicextraction.png')]"/>
+        <div class="h-52 bg-no-repeat bg-cover bg-center bg-[url('/images/projects/topicextract-4.png')]"/>
         <div class="h-52 bg-no-repeat bg-cover bg-center bg-[url('/images/projects/greenwoods.png')]"/>
         <div class="h-52 bg-no-repeat bg-cover bg-center bg-[url('/images/projects/localite.png')]"/>
         <div class="h-52 bg-no-repeat bg-cover bg-center bg-[url('/images/projects/uniboost.png')]"/>

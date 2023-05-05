@@ -1,16 +1,20 @@
 <template>
     <div class='m-10 mt-16 xl:mx-32'>
         <div>
-            <div class='grid grid-cols-1 sm:grid-cols-2 md:mx-20 lg:mx-30 mb-12'>
+            <div class='grid grid-cols-1 md:grid-cols-2 md:mx-10 lg:mx-30 gap-10'>
                 <div class='h-100 flex flex-col justify-around'>
                     <div>
                         <h1 class='text-4xl font-bold mb-2'>Hello!</h1>
-                        <h2 class='text-xl'>I'm a blah blah blah. You should hire me. Lots more text here blah blah blah blah blah. bleep bloop bleep bang bong bing.</h2>
-                        <p class='mt-2'>Small text here.</p>
+                        <h2 class='text-xl'>As a software engineer and entrepeneur my work experience spans web development, business strategy, and product management.</h2>
+                        <p class='text-lg mt-5'>Please feel free to take a look around this website to learn a bit more about me and the projects I've been involved in.
+                        </p>
                     </div>
-                    <NuxtLink to='/contact' class='w-32 border-solid border-2 border-orange  h-10 rounded-md text-center p-1.5 mt-5 hover:bg-orange hover:text-white'>Get In Touch</NuxtLink>
+                    <div class='flex mt-5'>
+                        <NuxtLink to='/projects' class='w-32 border-solid border-2 border-orange  h-10 rounded-md text-center p-1.5 hover:bg-orange hover:text-white mr-5'>View Projects</NuxtLink>
+                        <NuxtLink to='/contact' class='w-32 border-solid border-2 border-orange  h-10 rounded-md text-center p-1.5 hover:bg-orange hover:text-white'>Contact Me</NuxtLink>
+                    </div>
                 </div>
-                <img src="/images/profile.jpg" class='hidden sm:block h-44 w-44 md:h-52 md:w-52 lg:h-64 lg:w-64 justify-self-end self-center rounded-full'>
+                <img src="/images/profile.jpg" class='hidden md:block h-44 w-44 md:h-52 md:w-52 lg:h-64 lg:w-64 justify-self-end self-center rounded-full'>
             </div>
         </div>
 

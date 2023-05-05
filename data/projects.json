@@ -30,10 +30,6 @@
                     "icon": "/icons/skills/coda.png"
                 },
                 {
-                    "skill": "Miro",
-                    "icon": "/icons/skills/miro.png"
-                },
-                {
                     "skill": "PHP",
                     "icon": "/icons/skills/php.png"
                 },
@@ -105,7 +101,7 @@
                 }
             ],
             "role": 
-                "I was responsible for implementing various graph visualisations within the product, but primarily the 'Knowledge Graph' visualisations. This visualisation depicts the connections between users, the data they have uploaded, and relavant topics to the data.",
+                "I was responsible for implementing various graph visualisations within the product, but primarily the 'Knowledge Graph'. This visualisation depicts the connections between users, the data they have uploaded, and relavant topics to the data.",
             "process": [
                 "Planning the data structure within the graph database, considering how the efficiency of reading and writing to the database can be maximised through the properties of, and relationships between, nodes.",
                 "Using D3 to create a force-directed graph, populated with data from the graph database.",
@@ -125,7 +121,10 @@
                 "In order to structure a set of qualitative data, the 'Graphium' platform needed the ability to extract key topics and map the relationships between them."
             ],
             "imgs": [
-                "/images/projects/topicextraction.png"
+                "/images/projects/topicextract-4.png",
+                "/images/projects/topicextract-1.png",
+                "/images/projects/topicextract-2.png",
+                "/images/projects/topicextract-3.png"
             ],
             "toolkit": [
                 {
@@ -225,9 +224,50 @@
             "result": [
                 "We utilised photos uploaded by visitors of the art trail to uncover a mystery 'Wallace and Gromit' themed collage. This created a motivation for users to engage with the trail and upload photos which could be shared for social media marketing.",
                 "The idea developed from our insights that users were often families with young children who were looking a for a way to add gamification to the walk, entertain their children, and allow the whole family to interact and work together.",
-                "The program used by The Grand Appeal during the arts trail and you can see the results, as well as the working of our project, above."
+                "The program used by The Grand Appeal during the arts trail on their website."
             ],
-            "video": "https: //www.youtube.com/embed/-FYH2tmBgMc"
+            "video": "https://www.youtube.com/embed/-FYH2tmBgMc"
+        },
+        {
+            "title": "Planana",
+            "description": "A web app to help users plan their weekly meals and shopping lists.",
+            "link": null,
+            "tags": ["tech"],
+            "overview": [
+                "Creating meal plans can help people save money, reduce food waste, and eat healthily.",
+                "This web app was designed to make it quick and easy to create a weekly meal plan, using an API integration with the 'Yummy' recipe API to discover new recipes."
+            ],
+            "imgs": [
+                "/images/projects/planana.png"
+            ],
+            "toolkit": [
+                {
+                    "skill": "SQLite",
+                    "icon": "/icons/skills/sqlite.png"
+                },
+                {
+                    "skill": "Express",
+                    "icon": "/icons/skills/express.png"
+                },
+                {   
+                    "skill": "GIMP",
+                    "icon": "/icons/skills/gimp.png"
+                }
+            ],
+            "role": 
+                "Within a team of three, I was responsible for designing the app layout and developing various frontend and backend features.",
+            "process": [
+                "Mapping user journeys throughout the app and creating basic wireframes.",
+                "Developing the logo and png / svg images to use throughout the app",
+                "Set up user authentication and database management using Express and SQLite.",
+                "Implementing access to the Yummly API to allow users to search for recipes.",
+                "Develop 'drag and drop' functionality in JavaScript for users to map recipes to days of the week.",
+                "Enable users to export an ingredients list for their weekly plan to a pdf document."
+            ],
+            "result": [
+                "The web app enabled users to sign in, explore various recipes, store chosen recipes within a weekly meal plan, save the plan, and export the ingredients list to a pdf document. A walkthrough of the website can be found below."
+            ],
+            "video": "https://www.youtube.com/embed/QVRkhRkGl80"
         },
         {
             "title": "Utopi",
@@ -258,7 +298,7 @@
                 }
             ],
             "role": 
-                "Within a team of two others, I was individually responsible for the development of our website and the 3D modelling of our product. Additionally, I worked alongside my team to undergo in-depth primary and secondary research to understand our target market, our competitors, and the wider social and environmental impacts of our product.",
+                "Within our team of three, I was individually responsible for the development of our website and the 3D modelling of our product. Additionally, I worked alongside my team to undergo in-depth primary and secondary research to understand our target market, our competitors, and the wider social and environmental impacts of our product.",
             "process": [ 
                 "Secondary PESTEL analysis of the chidren's toy market.",
                 "Secondary research into sustainable materials and effective circular design practices.",
@@ -275,7 +315,8 @@
                 "Various incentives, such as discounts on new toys after a return, or opportunities for collective gift giving for childrens birthdays, were designed to encourage parents to switch to Utopi toys.",
                 "We developed a physical prototype for some of the toys and gained real feedback from parents and children, as well as feedback from a number of children's toy sellers."
             ],
-            "video": "https://www.youtube.com/embed/zG5cO2djp1M"
+            "video": "https://www.youtube.com/embed/zG5cO2djp1M",
+            "report": "/files/Utopi-report.pdf"
         },
         {
             "title": "UniBoost",
@@ -283,8 +324,7 @@
             "link": null,
             "tags": ["design", "business"],
             "overview" : [
-                "There was a 210% increase in students dropping out of Universities for mental health related reasons between 2010 and 2015. Following interviews with psychotherapists and mental health organisations around Bristol we discovered one of the biggest impacts on students was a lack of a support network.",
-                "UniBoost aims to tackle this problem by creating an accessible platform for students that connects them with their university and city, and encourages them to prioritise their mental wellbeing."
+                "There was a 210% increase in students dropping out of Universities for mental health related reasons between 2010 and 2015. UniBoost aims to tackle this problem by creating an accessible platform that encourages students to prioritise their mental wellbeing."
             ],
             "imgs": [
                 "/images/projects/uniboost.png"
@@ -305,7 +345,7 @@
 
             ],
             "role": 
-                "Within a team of two others (an Anthropology student and a Psychology student), I was responsible for the development of the app prototype and the website. I also worked alongside my team to conduct primary and secondary research, develop user personas, and ideate the product and business model.",
+                "Within a team of three, I was responsible for the development of the app prototype and the website. I also worked alongside my team to conduct primary and secondary research, develop user personas, and ideate the product and business model.",
             "process": [
                 "Conduct primary research interviews with students, mental health professionals, and university organisations.",
                 "Conduct secondary research into the mental health of students and the support available to them.",
@@ -320,15 +360,16 @@
                 "The UniBoost app encouraged University Students to complete challenges aimed at improving their mental wellbeing, such as cooking a healthy meal, doing some exercise, having a mindfulness session, or meeting up with a friend. The incentive to complete these challenges were deals and discounts offered by local businesses.",
                 "The app also connected students with their university by making key resources (student health organisations and support systems) easily accessible within the app.",
                 "The prototype receieved positive feedback from trial users and from the board of university staff and business professionals."
-            ]
+            ],
+            "report": "/files/UniBoost-report.pdf"
         },
         {
             "title": "3D Modelling",
-            "description": "Working with Maya to develop realistic 3d models and animations.",
+            "description": "Working with Maya to develop realistic 3D models and animations.",
             "link": null,
             "tags": ["design"],
             "overview" : [
-                "to add"
+                "I have always been interested in 3D modelling and animation, and this project was an opportunity to practice modelling and animating using the software Maya."
             ],
             "imgs": [
                 "/images/projects/3dmodelling.png",
@@ -341,10 +382,14 @@
                     "icon": "/icons/skills/maya.png"
                 }
             ],
-            "role": "to add",
-            "process": [ "to add"],
+            "role": "This was a personal project based on my own interests.",
+            "process": [ 
+                "Created 3d replicas of individual items in the model/animation - using reference photos where possible.",
+                "Arranged the models to create a realistic scene.",
+                "Added textures and lighting to bring the models to life."
+            ],
             "result": [
-                "to add"
+                "The end results of the project are depicted in the photos above, and the video below."
             ],
             "video" : "https://www.youtube.com/embed/4jOqVVh4M1s"
         }
