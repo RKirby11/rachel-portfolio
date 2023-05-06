@@ -1,20 +1,24 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@nuxtjs/google-fonts": "^3.0.0",
-    "@nuxtjs/tailwindcss": "^6.6.6",
-    "@types/node": "^18",
-    "nuxt": "^3.4.2"
-  },
-  "dependencies": {
-    "nuxt-mail": "^3.1.42"
-  }
+    "name": "nuxt-app",
+    "private": true,
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "start": "nuxt start",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
+    },
+    "devDependencies": {
+        "@nuxtjs/google-fonts": "^3.0.0",
+        "@nuxtjs/tailwindcss": "^6.6.6",
+        "@types/node": "^18",
+        "nuxt": "^3.4.2"
+    },
+    "dependencies": {
+        "nuxt-mail": "^3.1.42"
+    },
+    "engines": {
+        "node": "18.16.0"
+    }
 }
