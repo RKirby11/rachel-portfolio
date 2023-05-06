@@ -4,9 +4,9 @@
             <div class='grid grid-cols-1 lg:grid-cols-2 md:mx-10 lg:mx-30 gap-10'>
                 <div class='h-100 flex flex-col justify-around'>
                     <div>
-                        <h2 class='text-2xl font-bold '>I'm a software engineer and product manager with 3 years experience working in Tech Start-Ups</h2>
+                        <h2 class='text-2xl font-bold '>I'm a product manager and software engineer with 3 years experience working with tech start-ups</h2>
                         <br>
-                        <p>Currently a co-founder of Graphium Technologies LTD. A B2B SaaS company that helps businesses make better use of their unstructured research data.</p>
+                        <p>Co-Founder of Graphium Technologies LTD. A B2B SaaS company that helps businesses make better use of their unstructured research data.</p>
                     </div>
                     <div class='flex'>
                         <NuxtLink :to='cvUrl' target='_blank' class='w-32 border-solid border-2 border-orange h-10 rounded-md text-center p-1.5 mt-5 hover:border-orange hover:text-white hover:bg-orange mr-5'>View CV</NuxtLink>

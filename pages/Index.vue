@@ -5,8 +5,8 @@
                 <div class='h-100 flex flex-col justify-around'>
                     <div>
                         <h1 class='text-4xl font-bold mb-2'>Hello!</h1>
-                        <h2 class='text-xl'>As a software engineer and entrepeneur my work experience spans web development, business strategy, and product management.</h2>
-                        <p class='text-lg mt-5'>Please feel free to take a look around this website to learn a bit more about me and the projects I've been involved in.
+                        <h2 class='text-xl'>As a driven product manager and software engineer, I thrive on leading the product lifecycle from concept to launch, solving complex problems and delivering excellent user experiences.</h2>
+                        <p class='text-lg mt-5'>Please feel free to take a look around to learn a bit more about me and the projects I've been involved in.
                         </p>
                     </div>
                     <div class='flex mt-5'>
