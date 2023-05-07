@@ -1,6 +1,7 @@
 {
     "clean_urls": false,
     "routes": {
-        "/index": "/"
+        "/index": "/",
+        "/index.vue": "/"
     }
 }
