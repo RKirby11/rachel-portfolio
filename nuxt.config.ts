@@ -11,15 +11,16 @@ export default defineNuxtConfig({
         ['nuxt-mail', {
             message: {
                 to: process.env.MAIL_TO,
+                from: process.env.MAIL_TO,
             },
             smtp: {
                 host: process.env.MAIL_HOST,
                 port: process.env.MAIL_PORT,
                 auth: {
                     user: process.env.MAIL_USER,
-                    pass: process.env.MAIL_PASS,
+                    pass: process.env.MAIL_PASS
                 }
             },
-        }]
-    ],
+        }],
+    ]
 })

@@ -17,7 +17,8 @@
         "nuxt": "^3.4.2"
     },
     "dependencies": {
-        "nuxt-mail": "^3.1.42"
+        "nuxt-mail": "^3.1.42",
+        "path-browserify": "^1.0.1"
     },
     "engines": {
         "node": "18.16.0"
