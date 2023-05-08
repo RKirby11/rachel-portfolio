@@ -6,7 +6,7 @@
             target='_blank'
             class='text-center ml-5'
         >
-                <img src='/icons/linkedin-logo.svg' class='invert h-3' alt='cursor icon' />
+                <nuxt-img src='/icons/linkedin-logo.svg' class='invert h-3' alt='cursor icon' />
         </NuxtLink>
     </footer>
 </template>

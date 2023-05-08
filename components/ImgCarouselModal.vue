@@ -4,14 +4,14 @@
             <div class="bg-white dark:bg-charcoal w-4/5 h-4/5 rounded-3xl p-5">
                 <div class="h-full w-full flex flex-col justify-between">
                     <div class='flex justify-end items-center'>
-                        <img src='/icons/shrink.svg' class='dark:invert h-8 hover:cursor-pointer' @click="$emit('close')"/>
+                        <nuxt-img src='/icons/shrink.svg' class='dark:invert h-8 hover:cursor-pointer' @click="$emit('close')"/>
                     </div>
                     <div class='h-4/5 flex justify-center items-center '>
-                        <img :src="mainImg" class='h-full object-contain rounded-md'/>
+                        <nuxt-img :src="mainImg" class='h-full object-contain rounded-md'/>
                     </div>
                     <div class='flex justify-center h-10'>
-                        <img v-if='imgs.length > 1'  @click="updateImgIndex('left')" src='/icons/chevron-double-left.svg' class='dark:invert h-8 hover:cursor-pointer mr-8'/>
-                        <img v-if='imgs.length > 1'  @click="updateImgIndex('right')" src='/icons/chevron-double-right.svg' class='dark:invert h-8 hover:cursor-pointer ml-8'/>
+                        <nuxt-img v-if='imgs.length > 1'  @click="updateImgIndex('left')" src='/icons/chevron-double-left.svg' class='dark:invert h-8 hover:cursor-pointer mr-8'/>
+                        <nuxt-img v-if='imgs.length > 1'  @click="updateImgIndex('right')" src='/icons/chevron-double-right.svg' class='dark:invert h-8 hover:cursor-pointer ml-8'/>
                     </div>
                 </div>
             </div>

@@ -11,6 +11,7 @@
         "heroku-postbuild": "npm run build"
     },
     "devDependencies": {
+        "@nuxt/image-edge": "^1.0.0-28050764.aaee7ac",
         "@nuxtjs/google-fonts": "^3.0.0",
         "@nuxtjs/tailwindcss": "^6.6.6",
         "@types/node": "^18",

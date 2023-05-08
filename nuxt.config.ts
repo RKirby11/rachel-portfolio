@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/google-fonts',
         '@nuxtjs/tailwindcss',
+        '@nuxt/image-edge',
         ['nuxt-mail', {
             message: {
                 to: process.env.MAIL_TO,
@@ -22,5 +23,5 @@ export default defineNuxtConfig({
                 }
             },
         }],
-    ]
+    ],
 })
