@@ -4,7 +4,7 @@
             <div class="bg-white dark:bg-charcoal w-4/5 h-4/5 rounded-3xl p-5">
                 <div class="h-full w-full flex flex-col justify-between">
                     <div class='flex justify-end items-center'>
-                        <nuxt-img src='/icons/shrink.svg' class='dark:invert h-8 hover:cursor-pointer' @click="$emit('close')"/>
+                        <nuxt-img src='/icons/shrink.svg' lazy class='dark:invert h-8 hover:cursor-pointer' @click="$emit('close')"/>
                     </div>
                     <div class='h-4/5 flex justify-center items-center '>
                         <nuxt-img :src="mainImg" class='h-full object-contain rounded-md'/>

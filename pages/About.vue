@@ -13,7 +13,7 @@
                         <NuxtLink to='/contact' class='w-32 border-solid border-2 border-orange h-10 rounded-md text-center p-1.5 mt-5 hover:border-orange hover:text-white hover:bg-orange'>Contact Me</NuxtLink>
                     </div>
                 </div>
-                <nuxt-img src="/images/risingStars.png" class='hidden lg:block w-auto justify-self-end self-center rounded-md'/>
+                <nuxt-img src="/images/risingStars.png" lazy class='hidden lg:block w-auto justify-self-end self-center rounded-md'/>
             </div>
         </div>
         <div class='lg:mx-16 grid grid-cols-1 md:grid-cols-3 mb-12'>
