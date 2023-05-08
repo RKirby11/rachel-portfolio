@@ -1,7 +1,7 @@
 <template>
     <div class='m-10 mt-16 xl:mx-32 text-lg'>
         <NuxtLink to='/projects' class='flex items-center hover:underline hover:cursor-pointer mb-5'>
-            <nuxt-img src='/icons/arrow-left.svg' class='dark:invert h-5 mr-2'/>
+            <nuxt-img src='/icons/arrow-left.svg' alt='back arrow icon' class='dark:invert h-5 mr-2'/>
             Back to All Projects
         </NuxtLink>
         <div class="grid grid-cols-1 lg:grid-cols-2">

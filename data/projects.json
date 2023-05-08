@@ -10,11 +10,26 @@
                 "During this time we were also finalists for the 'Innovative' and 'Technology Services' catagories of the Welsh StartUp Awards, were titled a 'Welsh Rising Star' by TechNation."
             ],
             "imgs" : [
-                "/images/projects/graphium.png",
-                "/images/projects/graphium-1.jpeg",
-                "/images/projects/graphium-2.jpeg",
-                "/images/projects/graphium-3.jpeg",
-                "/images/projects/graphium-4.jpeg"
+                {
+                    "src": "/images/projects/graphium.png",
+                    "alt": "Graphium Product Image Main"
+                },
+                {
+                    "src": "/images/projects/graphium-1.jpeg",
+                    "alt": "Graphium Product Image 2"
+                },
+                {
+                    "src": "/images/projects/graphium-2.jpeg",
+                    "alt": "Graphium Product Image 3"
+                },
+                {
+                   "src": "/images/projects/graphium-3.jpeg",
+                    "alt": "Graphium Product Image 4"
+                },
+                {
+                    "src": "/images/projects/graphium-4.jpeg",
+                    "alt": "Graphium Product Image 5"
+                }
             ],
             "toolkit": [
                 {
@@ -81,10 +96,22 @@
                 "One of the core features of the 'Graphium' platform is the ability to visualise the connections across the users' datasets."
             ],
             "imgs": [
-                "/images/projects/graphvis.png",
-                "/images/projects/graphvis-2.png",
-                "/images/projects/graphvis-3.png",
-                "/images/projects/graphvis-4.png"
+                {
+                    "src": "/images/projects/graphvis.png",
+                    "alt": "Graphium Visualisation Example"
+                },
+                {
+                    "src": "/images/projects/graphvis-2.png",
+                    "alt": "Graphium Visualisation Example 2"
+                },
+                {
+                    "src": "/images/projects/graphvis-3.png",
+                    "alt": "Graphium Visualisation Example 3"
+                },
+                {   
+                    "src": "/images/projects/graphvis-4.png",
+                    "alt": "Graphium Visualisation Example 4"
+                }
             ],
             "toolkit": [
                 {
@@ -121,10 +148,22 @@
                 "In order to structure a set of qualitative data, the 'Graphium' platform needed the ability to extract key topics and map the relationships between them."
             ],
             "imgs": [
-                "/images/projects/topicextract-4.png",
-                "/images/projects/topicextract-1.png",
-                "/images/projects/topicextract-2.png",
-                "/images/projects/topicextract-3.png"
+                {
+                    "src": "/images/projects/topicextract-4.png",
+                    "alt": "Graphium Topic Extraction Example Text"
+                },
+                {
+                    "src": "/images/projects/topicextract-1.png",
+                    "alt": "Graphium Topic Extraction Example Topics"
+                },
+                {
+                    "src": "/images/projects/topicextract-2.png",
+                    "alt": "Graphium Topic Extraction Example Keyphrases"
+                },
+                {   
+                    "src": "/images/projects/topicextract-3.png",
+                    "alt": "Graphium Topic Extraction Example Page"
+                }
             ],
             "toolkit": [
                 {
@@ -163,9 +202,18 @@
                 "A personal project exploring how to build communities within local areas, and enable people to meet others with similar interests."
             ],
             "imgs": [
-                "/images/projects/localite.png",
-                "/images/projects/localite-1.png",
-                "/images/projects/localite-2.png"
+                {
+                    "src": "/images/projects/localite.png",
+                    "alt": "Localite Product Image Main"
+                },
+                {
+                    "src": "/images/projects/localite-1.png",
+                    "alt": "Localite Product Image 2"
+                },
+                {
+                    "src": "/images/projects/localite-2.png",
+                    "alt": "Localite Product Image 3"
+                }
             ],
             "toolkit": [
                 {
@@ -204,8 +252,14 @@
                 "As a team of 6 Bristol Computer Science students, we were asked to design and develop a program for the Arts Trail website to encourage more people to pursue the trail."
             ],
             "imgs": [
-                "/images/projects/grandappeal.png",
-                "/images/projects/grandappeal-1.png"
+                {
+                    "src": "/images/projects/grandappeal.png",
+                    "alt": "Grand Appeal Final Results"
+                },
+                {
+                    "src": "/images/projects/grandappeal-1.png",
+                    "alt": "Grand Appeal Social Media Screenshot"
+                }
             ],
             "toolkit": [
                 {
@@ -238,7 +292,10 @@
                 "This web app was designed to make it quick and easy to create a weekly meal plan, using an API integration with the 'Yummy' recipe API to discover new recipes."
             ],
             "imgs": [
-                "/images/projects/planana.png"
+                {
+                    "src": "/images/projects/planana.png",
+                    "alt": "Planana Product Image Main"
+                }
             ],
             "toolkit": [
                 {
@@ -279,9 +336,18 @@
                 "Utopi aims to reduce this waste by creating modular toys, built with sustainable materials, that can be reconfigured to support the changing requirements of a childs development."
             ],
             "imgs": [
-                "/images/projects/utopi.png",
-                "/images/projects/utopi-1.png",
-                "/images/projects/utopi-5.png"
+                {
+                    "src": "/images/projects/utopi.png",
+                    "alt": "Utopi Image Cover"
+                },
+                {
+                    "src": "/images/projects/utopi-1.png",
+                    "alt": "Utopi Website Example"
+                },
+                {
+                    "src": "/images/projects/utopi-5.png",
+                    "alt": "Utopi Prototype Example"
+                }
             ],
             "toolkit": [
                 {
@@ -327,7 +393,10 @@
                 "There was a 210% increase in students dropping out of Universities for mental health related reasons between 2010 and 2015. UniBoost aims to tackle this problem by creating an accessible platform that encourages students to prioritise their mental wellbeing."
             ],
             "imgs": [
-                "/images/projects/uniboost.png"
+                {
+                    "src": "/images/projects/uniboost.png",
+                    "alt": "UniBoost Prototype Example"
+                }
             ],
             "toolkit": [
                 {
@@ -372,9 +441,18 @@
                 "I have always been interested in 3D modelling and animation, and this project was an opportunity to practice modelling and animating using the software Maya."
             ],
             "imgs": [
-                "/images/projects/3dmodelling.png",
-                "/images/projects/3dmodelling-1.jpg",
-                "/images/projects/3dmodelling-2.png"
+                {
+                    "src": "/images/projects/3dmodelling.png",
+                    "alt": "3D Model Example"
+                },
+                {
+                    "src": "/images/projects/3dmodelling-1.jpg",
+                    "alt": "3D Model Example 2"
+                },
+                {
+                    "src": "/images/projects/3dmodelling-2.png",
+                    "alt": "3D Model Reference Image"
+                }
             ],
             "toolkit": [
                 {

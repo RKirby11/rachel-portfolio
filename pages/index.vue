@@ -14,7 +14,7 @@
                         <NuxtLink to='/contact' class='w-32 border-solid border-2 border-orange  h-10 rounded-md text-center p-1.5 hover:bg-orange hover:text-white'>Contact Me</NuxtLink>
                     </div>
                 </div>
-                <nuxt-img src="/images/profile.jpg" lazy class='hidden md:block h-44 w-44 md:h-52 md:w-52 lg:h-64 lg:w-64 justify-self-end self-center rounded-full'/>
+                <nuxt-img src="/images/profile.jpg" alt='profile photo' placeholder class='hidden md:block h-44 w-44 md:h-52 md:w-52 lg:h-64 lg:w-64 justify-self-end self-center rounded-full'/>
             </div>
         </div>
 
