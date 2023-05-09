@@ -45,9 +45,9 @@
 </template>
 
 <script>
-import highlightData from '/data/highlights.json' assert {type: 'json'}
-import workData from '/data/work.json' assert {type: 'json'}
-import educationData from '/data/education.json' assert {type: 'json'}
+import highlightData from '~/static/highlights.json' assert {type: 'json'}
+import workData from '~/static/work.json' assert {type: 'json'}
+import educationData from '~/static/education.json' assert {type: 'json'}
 export default {
     data() {
         return {
@@ -60,7 +60,6 @@ export default {
     created() {
         let runtimeConfig = useRuntimeConfig();
         this.cvUrl = runtimeConfig.public.baseUrl + 'rachel-kirby-cv.pdf';
-        console.log(this.cvUrl)
     }
 }
 </script>

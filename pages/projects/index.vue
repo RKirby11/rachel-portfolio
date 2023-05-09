@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import projData from '/data/projects.json' assert {type: 'json'}
+import projData from '~/static/projects.json' assert {type: 'json'}
 export default { 
     data() {
         return {

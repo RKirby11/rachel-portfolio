@@ -45,12 +45,13 @@
     </div>
 </template>
 <script>
-import projectData from '/data/projects.json' assert {type: 'json'}
-import skillData from '/data/skills.json' assert {type: 'json'}
+import projectData from '~/static/projects.json' assert {type: 'json'}
+import skillData from '~/static/skills.json' assert {type: 'json'}
 export default {
     data() {
         return {
-            recentProjects: projectData.projects.slice(0, 3),
+            projects: projectData.projects,
+            recentProjects: null,
             skills: skillData.skills
         }
     },
@@ -61,11 +62,11 @@ export default {
     methods: {
         updateProjectDisplay() {
             if(window.innerWidth < 768)
-                this.recentProjects = projectData.projects.slice(0, 1)
+                this.recentProjects = this.projects.slice(0, 1)
             else if(window.innerWidth < 1024)
-                this.recentProjects = projectData.projects.slice(0, 2)
+                this.recentProjects = this.projects.slice(0, 2)
             else 
-                this.recentProjects = projectData.projects.slice(0, 3)
+                this.recentProjects = this.projects.slice(0, 3)
         },
     }
 };
