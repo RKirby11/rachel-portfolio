@@ -18,35 +18,19 @@
         </div>
     </div>
 </template>
-<script>
-export default {
-    props: {
-        imgs: {
-            type: Array,
-            required: true,
-        },
-    },
-    data() {
-        return {
-            imgIndex: 0,
-        }
-    },
-    computed: {
-        mainImg() {
-            return this.imgs[this.imgIndex]
-        }
-    },
-    methods: {
-        updateImgIndex(direction) {
-            if(direction == 'left') {
-                if(this.imgIndex == 0) this.imgIndex = this.imgs.length - 1;
-                else this.imgIndex--;
-            }
-            else {
-                if(this.imgIndex == (this.imgs.length - 1)) this.imgIndex = 0
-                else this.imgIndex++;
-            }
-        }
+<script setup>
+const props = defineProps({ imgs: Array });
+const imgIndex = ref(0);
+const mainImg = computed(() => props.imgs[imgIndex.value]);
+
+function updateImgIndex(direction) {
+    if(direction == 'left') {
+        if(imgIndex.value == 0) imgIndex.value = props.imgs.length - 1;
+        else imgIndex.value --;
+    }
+    else {
+        if(imgIndex.value == (props.imgs.length - 1)) imgIndex.value = 0
+        else imgIndex.value ++;
     }
 }
 </script>

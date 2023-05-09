@@ -20,6 +20,7 @@
                 <nuxt-img src="/images/risingStars.png" alt='photo with team' :placeholder="[526,289]" class='hidden xl:block w-100 2xl:w-5/6 justify-self-end self-center rounded-md'/>
             </div>
         </div>
+        
         <div class='mt-20 lg:mx-16 grid grid-cols-1 md:grid-cols-3'>
             <div class='flex justify-center mb-5 md:mb-0' v-for='highlight in highlights' :key="highlight.headline">
                 <HighlightCard :item='highlight'/>
@@ -44,22 +45,10 @@
     </div>
 </template>
 
-<script>
-import highlightData from '~/static/highlights.json' assert {type: 'json'}
-import workData from '~/static/work.json' assert {type: 'json'}
-import educationData from '~/static/education.json' assert {type: 'json'}
-export default {
-    data() {
-        return {
-            highlights: highlightData.highlights,
-            work: workData.work,
-            education: educationData.education,
-            cvUrl: null,
-        }
-    },
-    created() {
-        let runtimeConfig = useRuntimeConfig();
-        this.cvUrl = runtimeConfig.public.baseUrl + 'rachel-kirby-cv.pdf';
-    }
-}
+<script setup>
+const { data: highlights } = await $fetch('/api/highlights');
+const { data: work } = await $fetch('/api/work');
+const { data: education } = await $fetch('/api/education');
+let runtimeConfig = useRuntimeConfig();
+const cvUrl = runtimeConfig.public.baseUrl + 'rachel-kirby-cv.pdf';
 </script>

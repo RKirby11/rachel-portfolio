@@ -4,13 +4,6 @@
         <div class='w-16 bg-dblue dark:bg-orange h-1 mb-4'/>
     </div>
 </template>
-<script>
-export default {
-    props: {
-        title: {
-            type: String,
-            required: true,
-        }
-    },
-}
+<script setup>
+defineProps({title: String})
 </script>

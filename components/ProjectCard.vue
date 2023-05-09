@@ -29,21 +29,7 @@
         </div>
     </div>
 </template>
-<script>
-export default {
-    props: {
-        project: { 
-            type: Object,
-            required: true
-        }
-    },
-    data() {
-        return {
-            hover: false,
-        }
-    },
-    computed: {
-        page: () => useRoute().path
-    }
-}
+<script setup>
+defineProps({ project: Object })
+const hover = ref(false)
 </script>

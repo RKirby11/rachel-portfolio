@@ -14,24 +14,9 @@
         <ImgCarouselModal v-if='modal' :imgs='imgs' @close='modal=false'/>
     </div>       
 </template>
-<script>
-export default {
-    props: {
-        imgs: {
-            type: Array,
-            required: true,
-        }
-    },
-    data() {
-        return {
-            mainImg: this.imgs[0],
-            modal: false,
-        }
-    },
-    computed: {
-        altImgs() {
-            return this.imgs.filter(img => img.src != this.mainImg.src)
-        },
-    },
-}
+<script setup>
+const props = defineProps({ imgs: Array });
+const mainImg = ref(props.imgs[0]);
+const modal = ref(false);
+const altImgs = computed(() => props.imgs.filter(img => img.src != mainImg.value.src));
 </script>

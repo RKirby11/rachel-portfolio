@@ -30,7 +30,7 @@
         <SectionTitle title='Recent Projects'/>
         <div class="bg-lblue dark:bg-orange shadow-lg dark:shadow-3xl rounded-lg p-10 mb-2">
             <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
-                <div v-for='(project, index) in recentProjects' :key='project.title'>
+                <div v-for='(project, index) in projects.data' :key='project.title'>
                     <ProjectCard :project='project' @click="$router.push({path: `projects/${index}`})"/>
                 </div>
             </div>
@@ -44,30 +44,26 @@
         <ContactCard/>
     </div>
 </template>
-<script>
-import projectData from '~/static/projects.json' assert {type: 'json'}
-import skillData from '~/static/skills.json' assert {type: 'json'}
-export default {
-    data() {
-        return {
-            projects: projectData.projects,
-            recentProjects: null,
-            skills: skillData.skills
-        }
-    },
-    mounted() {
-        window.addEventListener('resize', this.updateProjectDisplay);
-        this.updateProjectDisplay();
-    },
-    methods: {
-        updateProjectDisplay() {
-            if(window.innerWidth < 768)
-                this.recentProjects = this.projects.slice(0, 1)
-            else if(window.innerWidth < 1024)
-                this.recentProjects = this.projects.slice(0, 2)
-            else 
-                this.recentProjects = this.projects.slice(0, 3)
-        },
+<script setup>
+const projectCount = ref(3);
+const { data: skills } = await $fetch('/api/skills');
+const { data: projects } = await useAsyncData('projects', () => 
+    $fetch(`/api/projects/byCount/${projectCount.value}`),  {
+        watch: [ projectCount ]
     }
-};
-</script>
+);
+
+function updateProjectDisplay() {
+    if(window.innerWidth < 768) projectCount.value = 1;
+    else if(window.innerWidth < 1024) projectCount.value = 2;
+    else projectCount.value = 3;
+}
+
+onMounted(() => {
+    window.addEventListener('resize', updateProjectDisplay);
+    updateProjectDisplay();
+})
+onUnmounted(() => 
+    window.removeEventListener('resize', updateProjectDisplay)
+);
+</script>s

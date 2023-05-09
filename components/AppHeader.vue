@@ -63,15 +63,7 @@
         </div>
     </nav>
 </template>
-<script>
-export default ({
-    data() {
-        return {
-            showMenu: false
-        }
-    },
-    computed: {
-        page: () => useRoute().path
-    }
-})
+<script setup>
+const showMenu = ref(false)
+const page = computed(() => useRoute().path)
 </script>

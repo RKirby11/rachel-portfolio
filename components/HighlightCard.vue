@@ -5,13 +5,6 @@
         <p class='font-light'>{{ item.detail }}</p>
     </div>
 </template>
-<script>
-export default {
-    props: {
-        item: {
-            type: Object,
-            required: true
-        }
-    }
-}
+<script setup>
+defineProps({ item: Object })
 </script>

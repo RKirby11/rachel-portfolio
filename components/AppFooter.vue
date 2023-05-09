@@ -10,8 +10,5 @@
         </NuxtLink>
     </footer>
 </template>
-<script>
-
-</script>
 
 

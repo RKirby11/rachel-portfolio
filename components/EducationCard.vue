@@ -10,18 +10,7 @@
         </div>
     </div>
 </template>
-<script>
-export default {
-    props: {
-        item: {
-            type: Object,
-            required: true
-        }
-    },
-    data() {
-        return {
-            hover: false
-        }
-    }
-}
+<script setup>
+defineProps({ item: Object })
+const hover = ref(false)
 </script>

@@ -4,18 +4,7 @@
         <div v-if='hover' class='absolute top-8 h-5 w-32 mt-2 bg-dblue text-white dark:bg-dblue rounded-sm text-sm align-middle px-4'> {{ skill.skill }} </div>
     </div>
 </template>
-<script>
-export default {
-    props: {
-        skill: {
-            type: Object,
-            required: true
-        }
-    },
-    data() {
-        return {
-            hover: false
-        }
-    }
-}
+<script setup>
+defineProps({ skill: Object })
+const hover = ref(false)
 </script>
