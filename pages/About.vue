@@ -17,7 +17,7 @@
                         <CallToAction url='/contact' target='_self' text='Contact Me'/>
                     </div>
                 </div>
-                <nuxt-img src="/images/risingStars.png" alt='photo with team' preload class='hidden lg:block w-100 2xl:w-5/6 justify-self-end self-center rounded-md'/>
+                <nuxt-img src="/images/risingStars.png" alt='photo with team' :placeholder="[526,289]" class='hidden lg:block w-100 2xl:w-5/6 justify-self-end self-center rounded-md'/>
             </div>
         </div>
         <div class='mt-20 lg:mx-16 grid grid-cols-1 md:grid-cols-3'>
