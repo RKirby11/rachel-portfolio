@@ -46,9 +46,8 @@
 </template>
 
 <script setup>
-const { data: highlights } = await $fetch('/api/highlights');
-const { data: work } = await $fetch('/api/work');
-const { data: education } = await $fetch('/api/education');
-let runtimeConfig = useRuntimeConfig();
-const cvUrl = runtimeConfig.public.baseUrl + 'rachel-kirby-cv.pdf';
+const highlights = await $fetch('/api/data/highlights');
+const work = await $fetch('/api/data/work');
+const education = await $fetch('/api/data/education');
+const cvUrl = await $fetch(`/api/s3/rachel-kirby-cv.pdf`);
 </script>

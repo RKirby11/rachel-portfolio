@@ -6,44 +6,44 @@
         </NuxtLink>
         <div class="grid grid-cols-1 lg:grid-cols-2">
             <div>
-                <h1 class="text-4xl font-bold mb-5">{{ project.data.title }}</h1>
-                <h2 class="text-2xl font-bold mb-5">{{ project.data.description }}</h2>
-                <div v-for="(item, index) in project.data.overview" :key='index'>
+                <h1 class="text-4xl font-bold mb-5">{{ project.title }}</h1>
+                <h2 class="text-2xl font-bold mb-5">{{ project.description }}</h2>
+                <div v-for="(item, index) in project.overview" :key='index'>
                     <p class='text-lg mb-2'>{{ item }}</p>
                 </div>
-                <div v-if="reportUrl || project.data.link" class='flex mt-8'>
-                    <CallToAction :url='reportUrl ? reportUrl : project.data.link' target='_blank' :text="reportUrl ? 'View Project Report' : 'View Website'"/>
+                <div v-if="reportUrl || project.link" class='flex mt-8'>
+                    <CallToAction :url='reportUrl ? reportUrl : project.link' target='_blank' :text="reportUrl ? 'View Project Report' : 'View Website'"/>
                 </div>
             </div>
             <div class='flex justify-center lg:justify-end mt-8 lg:mt-0'>
-                <ImageCarousel :imgs='project.data.imgs'/>
+                <ImageCarousel :imgs='project.imgs'/>
             </div>
         </div>
 
         <SectionTitle title='Project Toolkit'/>
         <div class="shadow-light_3xl dark:shadow-3xl rounded-lg pt-6 mb-4" >
-            <div class='grid text-center' :class="`grid-cols-${project.data.toolkit.length}`">
-                <div v-for='skill in project.data.toolkit' :key='skill.skill' class='flex flex-col flex-wrap items-center mb-6'>
+            <div class='grid text-center' :class="`grid-cols-${project.toolkit.length}`">
+                <div v-for='skill in project.toolkit' :key='skill.skill' class='flex flex-col flex-wrap items-center mb-6'>
                     <SkillCard :skill='skill'/>
                 </div>
             </div>
         </div>
 
         <SectionTitle title='My Role'/>
-        <p>{{project.data.role}}</p>
+        <p>{{project.role}}</p>
 
         <SectionTitle title='Process'/>
         <ul class='list-disc'>
-            <li v-for="(item, index) in project.data.process" :key="index">{{ item }}</li>
+            <li v-for="(item, index) in project.process" :key="index">{{ item }}</li>
         </ul>
 
         <SectionTitle title='End Result'/>
-        <div v-for="(item, index) in project.data.result" :key='index'>
+        <div v-for="(item, index) in project.result" :key='index'>
             <p class='mb-2'>{{ item }}</p>
         </div>
 
-        <div v-if="project.data.video" class='w-full flex justify-center mt-20'>
-            <iframe title="YouTube Video Player" frameborder="0" width='560' height='315' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen :src="project.data.video"></iframe>
+        <div v-if="project.video" class='w-full flex justify-center mt-20'>
+            <iframe title="YouTube Video Player" frameborder="0" width='560' height='315' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen :src="project.video"></iframe>
         </div>
     </div>
 </template>
@@ -51,8 +51,7 @@
 const route = useRoute();
 const project = await $fetch(`/api/projects/byIndex/${route.params.id}`);
 const reportUrl = ref(null);
-if (project.data.report) {
-    let runtimeConfig = useRuntimeConfig();
-    reportUrl.value = runtimeConfig.public.baseUrl + project.data.report;
+if(project.report) {
+    reportUrl.value = await $fetch(`/api/s3/${project.report}`);
 }
 </script>

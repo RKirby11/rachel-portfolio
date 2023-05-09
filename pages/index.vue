@@ -30,7 +30,7 @@
         <SectionTitle title='Recent Projects'/>
         <div class="bg-lblue dark:bg-orange shadow-lg dark:shadow-3xl rounded-lg p-10 mb-2">
             <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
-                <div v-for='(project, index) in projects.data' :key='project.title'>
+                <div v-for='(project, index) in projects' :key='project.title'>
                     <ProjectCard :project='project' @click="$router.push({path: `projects/${index}`})"/>
                 </div>
             </div>
@@ -46,7 +46,7 @@
 </template>
 <script setup>
 const projectCount = ref(3);
-const { data: skills } = await $fetch('/api/skills');
+const skills = await $fetch('/api/data/skills');
 const { data: projects } = await useAsyncData('projects', () => 
     $fetch(`/api/projects/byCount/${projectCount.value}`),  {
         watch: [ projectCount ]

@@ -1,7 +1,5 @@
 import fs from 'fs'
 export default defineEventHandler((event) => {
     const data = JSON.parse(fs.readFileSync('./static/projects.json', 'utf8'))
-    return {
-        'data': data.projects[event.context.params.index]
-    }
+    return data.projects[event.context.params.index];
 })
