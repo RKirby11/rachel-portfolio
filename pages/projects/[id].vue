@@ -72,7 +72,7 @@ const previousProject = route.params.id == 0 ? null : parseInt(route.params.id) 
 const nextProject = route.params.id == 8 ? null : parseInt(route.params.id) + 1;
 
 useHead({
-    title: project.title,
+    title: 'Rachel Kirby | ' + project.title,
     meta: [{ 
         name: 'description', 
         content: project.description

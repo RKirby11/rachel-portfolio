@@ -51,7 +51,7 @@ const work = await $fetch('/api/data/work');
 const education = await $fetch('/api/data/education');
 const cvUrl = await $fetch(`/api/s3/rachel-kirby-cv.pdf`);
 useHead({
-    title: 'About',
+    title: 'Rachel Kirby | About',
     meta: [{ 
         name: 'description', 
         content: 'Get to know Rachel Kirby, a product manager and software engineer devoted to solving real world challenges and delivering excellent customer experiences.'

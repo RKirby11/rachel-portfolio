@@ -55,7 +55,7 @@ async function sendEmail() {
 }
 
 useHead({
-    title: 'Contact',
+    title: 'Rachel Kirby | Contact',
     meta: [{ 
         name: 'description', 
         content: "Get in touch with Rachel Kirby and take the first step towards working together. Whether you have a project in mind or just want to say hello, I'm always happy to hear from you. Contact me now to start the conversation."

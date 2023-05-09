@@ -22,7 +22,7 @@ const { data: projects } = await useAsyncData('projects', () =>
     }
 );
 useHead({
-    title: 'Projects',
+    title: 'Rachel Kirby | Projects',
     meta: [{ 
         name: 'description', 
         content: "From software engineering to product management and beyond, my work over the past 6 years has been driven by a passion for innovation. Explore my portfolio to see my latest projects."
