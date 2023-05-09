@@ -45,13 +45,37 @@
         <div v-if="project.video" class='w-full flex justify-center mt-20'>
             <iframe title="YouTube Video Player" frameborder="0" width='560' height='315' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen :src="project.video"></iframe>
         </div>
+
+        <div class='flex justify-center my-20'>
+            <NuxtLink v-if="previousProject != null" :to="`/projects/${previousProject}`" class='flex justify-center items-center w-64 rounded-md border-2 border-solid border-orange bg-grey dark:bg-orange text-center hover:text-orange hover:text-charcoal hover:dark:bg-charcoal hover:dark:text-white py-1.5' :class="nextProject != null ? 'mr-2' : ''">
+                <nuxt-img src='/icons/chevron-double-left.svg' alt='left arrow icon' class='dark:invert h-6 mr-2'/>
+                Previous
+            </NuxtLink>
+            <NuxtLink v-if="nextProject != null" :to="`/projects/${nextProject}`" class='flex justify-center items-center w-64 rounded-md border-2 border-solid border-orange bg-grey dark:bg-orange text-center hover:text-orange hover:text-charcoal hover:dark:bg-charcoal hover:dark:text-white py-1.5' :class="previousProject != null ? 'ml-2' : ''">
+                Next
+                <nuxt-img src='/icons/chevron-double-right.svg' alt='left arrow icon' class='dark:invert h-6 ml-2'/>
+            </NuxtLink>
+        </div>
     </div>
 </template>
 <script setup>
 const route = useRoute();
+if(route.params.id <= 0 || route.params >= 9) 
+    createError({ statusCode: 404, message: 'Project not found' })
+
 const project = await $fetch(`/api/projects/byIndex/${route.params.id}`);
 const reportUrl = ref(null);
 if(project.report) {
     reportUrl.value = await $fetch(`/api/s3/${project.report}`);
 }
+const previousProject = route.params.id == 0 ? null : parseInt(route.params.id) - 1;
+const nextProject = route.params.id == 8 ? null : parseInt(route.params.id) + 1;
+
+useHead({
+    title: project.title,
+    meta: [{ 
+        name: 'description', 
+        content: project.description
+    }]
+})
 </script>

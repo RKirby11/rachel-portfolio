@@ -28,7 +28,7 @@
         </div>
         <div class='grid grid-cols-1 lg:grid-cols-2 mb-12'>
             <div class='relative lg:mr-5'>
-                <SectionTitle title='Employments'/>
+                <SectionTitle title='Employment'/>
                 <div class='hidden sm:block absolute w-1 h-[365px] left-[9px] top-[200px] bg-dblue'></div>
                 <div class='flex justify-center mb-4' v-for='item in work' :key="item.company">
                     <WorkCard :item='item'/>
@@ -50,4 +50,11 @@ const highlights = await $fetch('/api/data/highlights');
 const work = await $fetch('/api/data/work');
 const education = await $fetch('/api/data/education');
 const cvUrl = await $fetch(`/api/s3/rachel-kirby-cv.pdf`);
+useHead({
+    title: 'About',
+    meta: [{ 
+        name: 'description', 
+        content: 'Get to know Rachel Kirby, a product manager and software engineer devoted to solving real world challenges and delivering excellent customer experiences.'
+    }]
+})
 </script>

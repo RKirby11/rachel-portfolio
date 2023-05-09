@@ -66,4 +66,12 @@ onMounted(() => {
 onUnmounted(() => 
     window.removeEventListener('resize', updateProjectDisplay)
 );
-</script>s
+
+useHead({
+    title: 'Rachel Kirby Portfolio',
+    meta: [{ 
+        name: 'description', 
+        content: "As a Product Manager and Software Engineer, I've been developing and delivering innovative solutions for 6 years. Take a look around my portfolio and explore my projects in product development, software engineering, and more."
+    }]
+})
+</script>

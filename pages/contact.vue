@@ -7,9 +7,9 @@
                 <p class='text-lg'>If you'd like to get in touch, please fill out the form and I'll get back to you as soon as possible.</p>
             </div>
             <form class='flex flex-col'>
-                <input v-model='form.from' placeholder='Your Email Address' class='border-solid border-gray-300 dark:border-dblue border-2 dark:bg-dblue mb-5 rounded-md h-10 p-2 focus:outline-none focus:border-gray-500'/>
-                <input v-model='form.subject' placeholder='Subject' class='border-solid border-gray-300 dark:border-dblue border-2 dark:bg-dblue mb-5 rounded-md h-10 p-2 focus:outline-none focus:border-gray-500'/>
-                <textarea v-model='form.message' placeholder='Message' class='border-solid border-gray-300 dark:border-dblue border-2 dark:bg-dblue mb-5 rounded-md h-32 p-2 focus:outline-none focus:border-gray-500'></textarea>
+                <input v-model='form.from' aria-label='Email Address' placeholder='Your Email Address' class='border-solid border-gray-300 dark:border-dblue border-2 dark:bg-dblue mb-5 rounded-md h-10 p-2 focus:outline-none focus:border-gray-500'/>
+                <input v-model='form.subject' aria-label='Email Subject' placeholder='Subject' class='border-solid border-gray-300 dark:border-dblue border-2 dark:bg-dblue mb-5 rounded-md h-10 p-2 focus:outline-none focus:border-gray-500'/>
+                <textarea v-model='form.message' aria-label='Email Message' placeholder='Message' class='border-solid border-gray-300 dark:border-dblue border-2 dark:bg-dblue mb-5 rounded-md h-32 p-2 focus:outline-none focus:border-gray-500'></textarea>
                 <div class='border-2 border-dblue rounded-md p-2 w-32 self-center text-center hover:bg-dblue hover:text-white hover:cursor-pointer' @click='sendEmail'>Submit</div>
                 <div v-if='error' class='text-orange mt-2 text-center italic'>Please fill out all fields.</div>
             </form>
@@ -53,4 +53,12 @@ async function sendEmail() {
         }
     }
 }
+
+useHead({
+    title: 'Contact',
+    meta: [{ 
+        name: 'description', 
+        content: "Get in touch with Rachel Kirby and take the first step towards working together. Whether you have a project in mind or just want to say hello, I'm always happy to hear from you. Contact me now to start the conversation."
+    }]
+})
 </script>
