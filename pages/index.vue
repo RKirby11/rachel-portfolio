@@ -4,17 +4,17 @@
             <div class='grid grid-cols-1 md:grid-cols-2 md:mx-10 lg:mx-30 gap-10'>
                 <div class='h-100 flex flex-col justify-around'>
                     <div>
-                        <h1 class='text-4xl font-bold mb-2'>Hello!</h1>
-                        <h2 class='text-xl'>As a driven product manager and software engineer, I thrive on leading the product lifecycle from concept to launch, solving complex problems and delivering excellent user experiences.</h2>
-                        <p class='text-lg mt-5'>Please feel free to take a look around to learn a bit more about me and the projects I've been involved in.
+                        <h1 class='text-4xl font-bold mb-4'>Hello!</h1>
+                        <h2 class='text-2xl mb-4'>I'm a product manager and software engineer from Bristol.</h2>
+                        <p class='text-xl'>Take a look around my site to learn a bit more about me and the projects I've been involved in.
                         </p>
                     </div>
                     <div class='flex mt-5'>
-                        <NuxtLink to='/projects' class='w-32 border-solid border-2 border-orange  h-10 rounded-md text-center p-1.5 hover:bg-orange hover:text-white mr-5'>View Projects</NuxtLink>
-                        <NuxtLink to='/contact' class='w-32 border-solid border-2 border-orange  h-10 rounded-md text-center p-1.5 hover:bg-orange hover:text-white'>Contact Me</NuxtLink>
+                        <CallToAction url='/projects' target='_self' text='View Projects'/>
+                        <CallToAction url='/contact' target='_self' text='Contact Me'/>
                     </div>
                 </div>
-                <nuxt-img src="/images/profile.jpg" alt='profile photo' placeholder class='hidden md:block h-44 w-44 md:h-52 md:w-52 lg:h-64 lg:w-64 justify-self-end self-center rounded-full'/>
+                <nuxt-img src="/images/profile.jpg" alt='profile photo' preload class='hidden md:block h-44 w-44 md:h-52 md:w-52 lg:h-64 lg:w-64 justify-self-end self-center rounded-full'/>
             </div>
         </div>
 
@@ -28,7 +28,7 @@
         </div>
 
         <SectionTitle title='Recent Projects'/>
-        <div class="bg-lblue dark:bg-orange shadow-lg dark:shadow-3xl rounded-lg py-6 px-5 mb-2">
+        <div class="bg-lblue dark:bg-orange shadow-lg dark:shadow-3xl rounded-lg p-10 mb-2">
             <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 <div v-for='(project, index) in recentProjects' :key='project.title'>
                     <ProjectCard :project='project' @click="$router.push({path: `projects/${index}`})"/>

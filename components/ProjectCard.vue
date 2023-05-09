@@ -4,12 +4,12 @@
         @mouseover="hover = true" 
         @mouseleave="hover = false"
     >
-        <nuxt-img :src='project.imgs[0].src' :alt='project.imgs[0].alt' placeholder class='h-full w-full object-cover rounded-md'/>
+        <nuxt-img :src='project.imgs[0].src' :alt='project.imgs[0].alt' placeholder loading='lazy' class='h-full w-full object-cover rounded-md'/>
         <div 
             v-if='hover'
             class="relative h-full w-full p-4 rounded-md bg-dblue -top-60" 
         >
-            <div class='flex flex-col justify-between text-white'>
+            <div class='flex flex-col justify-between text-white h-full'>
                 <div class="flex-col">
                     <h3 class='text-xl font-bold'>{{ project.title }}</h3>
                     <p>{{project.description}}</p>

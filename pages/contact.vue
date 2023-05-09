@@ -2,9 +2,9 @@
     <div class='m-10 mt-16 md:m-20 xl:mx-40'>
         <div v-if='!response' class='bg-white dark:bg-charcoal shadow-light_3xl dark:shadow-3xl rounded-md p-10 grid grid-cols-1 md:grid-cols-2'>
             <div class='p-5 pr-10'>
-                <h2 class='text-2xl font-bold mb-2'>Get in Touch!</h2>
-                <p class='text-lg mb-5'>I'm always open to new opportunities and collaborations.</p>
-                <p>If you'd like to get in touch, please fill out the form and I'll get back to you as soon as possible.</p>
+                <h1 class='text-2xl font-bold mb-4'>Get in Touch!</h1>
+                <h2 class='text-xl mb-4'>I'm always open to new opportunities and collaborations.</h2>
+                <p class='text-lg'>If you'd like to get in touch, please fill out the form and I'll get back to you as soon as possible.</p>
             </div>
             <form class='flex flex-col'>
                 <input v-model='mail.from' placeholder='Your Email Address' class='border-solid border-gray-300 dark:border-dblue border-2 dark:bg-dblue mb-5 rounded-md h-10 p-2 focus:outline-none focus:border-gray-500'/>

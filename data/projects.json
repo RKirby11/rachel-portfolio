@@ -66,7 +66,7 @@
                 }
             ],
             "role" : 
-                "As Founder and Director of Operations, I worked in a variety of roles across the business. Some of my key responsibilities included planning the product roadmap; developing agile working infrastructures to manage the development team, communicating with key stakeholders such as investors, partners, and customers, and managing the day-to-day operations of the business.",
+                "As a Founder I worked in a variety of roles across the business. Some of my key responsibilities included planning the product roadmap; developing agile working infrastructures to manage the development team; communicating with key stakeholders such as investors, partners, and customers, and managing the day-to-day operations of the business.",
             "process": [
                 "Working with a variety of different clients to understand the challenges they faced and their current workflows.",
                 "Ideating a number of potential solutions to their challenges.",
@@ -76,7 +76,7 @@
                 "Creating initial feature prototypes to test with the users.",
                 "Developing a concise business plan and strategy to turn the technology into a profitable business.",
                 "Pitching to investors to ontain pre-seed investment.",
-                "Developing product roadmaps and sprint plans to guide a our growing development team.",
+                "Developing product roadmaps and sprint plans to guide our growing development team.",
                 "Supporting the development team using daily stand ups and fortnighty sprint restrospectives.",
                 "Releasing the MVP to a number of trial partners including teams at OCSA, Innovate UK, and Cambridge Consultants.",
                 "Onboarding paying customers and managing our financial accounts."
@@ -89,11 +89,11 @@
         },
         {
             "title": "Graph Visualisation",
-            "description": "Utilising D3 and Neo4J Graph Databases to create knowledge graph visualisations based on a users context.",
+            "description": "Utilising D3 and Neo4J to create dynamically generated knowledge graph visualisations.",
             "link": null,
             "tags": ["tech"],
             "overview" : [
-                "One of the core features of the 'Graphium' platform is the ability to visualise the connections across the users' datasets."
+                "One of the core features of the 'Graphium' platform is the ability to visualise the connections across the users' datasets. I implemented this feature within our software, using D3 and Neo4J."
             ],
             "imgs": [
                 {
@@ -183,7 +183,7 @@
                 "I was responsible for experimenting with a variety of NLP tools and models, determining the most suitable implementation for the task, and implementing the final solution.",
             "process": [ 
                 "Experimenting with a number of NLP tools for topic modelling and classification, such as tokenisation, Named Entity Recognition (NER), and Latent Semantic Analysis (LSA).",
-                "After creating proof of concepts for each tool and model, I determined the most suitable solution for our platform - dependent on speed, efficiency, and accuracy.",
+                "After creating proof of concepts for each tool, I determined the most suitable solution for our platform - dependent on speed, efficiency, and accuracy.",
                 "The chosen process was to use a mixture of ready-made Spacy models, alongside a custom-made NER model using Spacy training pipelines.",
                 "A pre-defined topic ontology was utilised to determine which entities were suitable topics",
                 "I developed a proprietary algorithm, utilising the pre-defined ontology, to determine relevancy scores between the extracted topics and the document.",
@@ -199,7 +199,7 @@
             "link": null,
             "tags": ["tech"],
             "overview" : [
-                "A personal project exploring how to build communities within local areas, and enable people to meet others with similar interests."
+                "A personal project exploring how to build communities within local areas, and enable users to meet connect with other people in their area who share similar interests."
             ],
             "imgs": [
                 {
@@ -231,7 +231,7 @@
 
             ],
             "role": 
-                "I developed this product whilst at a start up incubator to practise designing, developing and presenting a web platform",
+                "I developed this product whilst at a start up incubator to practise designing, developing, and pitching a web platform",
             "process": [ 
                 "Develop initial wireframes and design.",
                 "Build the key features in Laravel.",
@@ -239,7 +239,7 @@
                 "Present the platform to an audience of entrepeneurs and investors."
             ],
             "result": [
-                "My platform was voted the best product of the cohort, over 15 other presentations. I did not take the product further than this, but it was a great learning experience for me to develop a product from start to finish, and present it to an audience."
+                "My platform was voted the best product of the cohort, against 15 other presentations. I did not take the product further, but it was a great learning experience for me to develop a product from start to finish, and present it to an audience."
             ]
         },
         {

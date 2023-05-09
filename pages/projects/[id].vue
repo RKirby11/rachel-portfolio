@@ -9,13 +9,10 @@
                 <h1 class="text-4xl font-bold mb-5">{{ title }}</h1>
                 <h2 class="text-2xl font-bold mb-5">{{ description }}</h2>
                 <div v-for="(item, index) in overview" :key='index'>
-                    <p class='mb-2'>{{ item }}</p>
+                    <p class='text-lg mb-2'>{{ item }}</p>
                 </div>
-                <div v-if="reportUrl || link" class='mt-8'>
-                    <NuxtLink :to='reportUrl ? reportUrl : link' target='_blank' class='w-64 border-solid border-2 border-orange h-10 rounded-md text-center p-1.5 mt-5 hover:border-orange hover:text-white hover:bg-orange mr-5'>
-                        <span v-if='reportUrl'>View Project Report</span>
-                        <span v-else>View Website</span>
-                    </NuxtLink>
+                <div v-if="reportUrl || link" class='flex mt-8'>
+                    <CallToAction :url='reportUrl ? reportUrl : link' target='_blank' :text="reportUrl ? 'View Project Report' : 'View Website'"/>
                 </div>
             </div>
             <div class='flex justify-center lg:justify-end mt-8 lg:mt-0'>
@@ -51,8 +48,10 @@
     </div>
 </template>
 <script>
+import CallToAction from '~/components/CallToAction.vue';
 import projData from '/data/projects.json' assert {type: 'json'}
 export default {
+  components: { CallToAction },
     data() {
         return {
             title: null,
@@ -82,7 +81,7 @@ export default {
         if(project.video) this.video = project.video;
         if(project.report) {
             let runtimeConfig = useRuntimeConfig();
-            this.reportUrl = runtimeConfig.public.baseUrl + project.report;
+            this.reportUrl = runtimeConfig.public.baseUrl + "/" + project.report;
         }
     },
 }

@@ -19,7 +19,7 @@ module.exports = {
             spacing: {
                 '9px' : '9px',
                 '195px' : '195px',
-                '160px' : '160px',
+                '200px' : '200px',
                 '365px' : '365px',
             },
             boxShadow: {
