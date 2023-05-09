@@ -1,7 +1,7 @@
 <template>
     <div class='m-10 mt-16 xl:mx-32'>
         <div class='mb-12'>
-            <div class='grid grid-cols-1 lg:grid-cols-2 md:mx-10 lg:mx-30 gap-10'>
+            <div class='grid grid-cols-1 xl:grid-cols-2 2xl:mx-30 gap-10'>
                 <div class='h-100 flex flex-col justify-around'>
                     <div>
                         <h1 class='text-2xl font-bold mb-4'>
@@ -17,7 +17,7 @@
                         <CallToAction url='/contact' target='_self' text='Contact Me'/>
                     </div>
                 </div>
-                <nuxt-img src="/images/risingStars.png" alt='photo with team' :placeholder="[526,289]" class='hidden lg:block w-100 2xl:w-5/6 justify-self-end self-center rounded-md'/>
+                <nuxt-img src="/images/risingStars.png" alt='photo with team' :placeholder="[526,289]" class='hidden xl:block w-100 2xl:w-5/6 justify-self-end self-center rounded-md'/>
             </div>
         </div>
         <div class='mt-20 lg:mx-16 grid grid-cols-1 md:grid-cols-3'>
