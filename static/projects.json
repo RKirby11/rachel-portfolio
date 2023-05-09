@@ -11,23 +11,23 @@
             ],
             "imgs" : [
                 {
-                    "src": "/images/projects/graphium.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/graphium.png",
                     "alt": "Graphium Product Image Main"
                 },
                 {
-                    "src": "/images/projects/graphium-1.jpeg",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/graphium-1.jpeg",
                     "alt": "Graphium Product Image 2"
                 },
                 {
-                    "src": "/images/projects/graphium-2.jpeg",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/graphium-2.jpeg",
                     "alt": "Graphium Product Image 3"
                 },
                 {
-                   "src": "/images/projects/graphium-3.jpeg",
+                   "src": "https://d23gkw6990ie0c.cloudfront.net/graphium-3.jpeg",
                     "alt": "Graphium Product Image 4"
                 },
                 {
-                    "src": "/images/projects/graphium-4.jpeg",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/graphium-4.jpeg",
                     "alt": "Graphium Product Image 5"
                 }
             ],
@@ -97,19 +97,19 @@
             ],
             "imgs": [
                 {
-                    "src": "/images/projects/graphvis.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/graphvis.png",
                     "alt": "Graphium Visualisation Example"
                 },
                 {
-                    "src": "/images/projects/graphvis-2.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/graphvis-2.png",
                     "alt": "Graphium Visualisation Example 2"
                 },
                 {
-                    "src": "/images/projects/graphvis-3.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/graphvis-3.png",
                     "alt": "Graphium Visualisation Example 3"
                 },
                 {   
-                    "src": "/images/projects/graphvis-4.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/graphvis-4.png",
                     "alt": "Graphium Visualisation Example 4"
                 }
             ],
@@ -149,19 +149,19 @@
             ],
             "imgs": [
                 {
-                    "src": "/images/projects/topicextract-4.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/topicextract-4.png",
                     "alt": "Graphium Topic Extraction Example Text"
                 },
                 {
-                    "src": "/images/projects/topicextract-1.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/topicextract-1.png",
                     "alt": "Graphium Topic Extraction Example Topics"
                 },
                 {
-                    "src": "/images/projects/topicextract-2.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/topicextract-2.png",
                     "alt": "Graphium Topic Extraction Example Keyphrases"
                 },
                 {   
-                    "src": "/images/projects/topicextract-3.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/topicextract-3.png",
                     "alt": "Graphium Topic Extraction Example Page"
                 }
             ],
@@ -203,15 +203,15 @@
             ],
             "imgs": [
                 {
-                    "src": "/images/projects/localite.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/localite.png",
                     "alt": "Localite Product Image Main"
                 },
                 {
-                    "src": "/images/projects/localite-1.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/localite-1.png",
                     "alt": "Localite Product Image 2"
                 },
                 {
-                    "src": "/images/projects/localite-2.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/localite-2.png",
                     "alt": "Localite Product Image 3"
                 }
             ],
@@ -253,11 +253,11 @@
             ],
             "imgs": [
                 {
-                    "src": "/images/projects/grandappeal.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/grandappeal.png",
                     "alt": "Grand Appeal Final Results"
                 },
                 {
-                    "src": "/images/projects/grandappeal-1.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/grandappeal-1.png",
                     "alt": "Grand Appeal Social Media Screenshot"
                 }
             ],
@@ -293,7 +293,7 @@
             ],
             "imgs": [
                 {
-                    "src": "/images/projects/planana.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/planana.png",
                     "alt": "Planana Product Image Main"
                 }
             ],
@@ -337,15 +337,15 @@
             ],
             "imgs": [
                 {
-                    "src": "/images/projects/utopi.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/utopi.png",
                     "alt": "Utopi Image Cover"
                 },
                 {
-                    "src": "/images/projects/utopi-1.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/utopi-1.png",
                     "alt": "Utopi Website Example"
                 },
                 {
-                    "src": "/images/projects/utopi-5.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/utopi-5.png",
                     "alt": "Utopi Prototype Example"
                 }
             ],
@@ -394,7 +394,7 @@
             ],
             "imgs": [
                 {
-                    "src": "/images/projects/uniboost.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/uniboost.png",
                     "alt": "UniBoost Prototype Example"
                 }
             ],
@@ -442,15 +442,15 @@
             ],
             "imgs": [
                 {
-                    "src": "/images/projects/3dmodelling.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/3dmodelling.png",
                     "alt": "3D Model Example"
                 },
                 {
-                    "src": "/images/projects/3dmodelling-1.jpg",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/3dmodelling-1.jpg",
                     "alt": "3D Model Example 2"
                 },
                 {
-                    "src": "/images/projects/3dmodelling-2.png",
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/3dmodelling-2.png",
                     "alt": "3D Model Reference Image"
                 }
             ],
