@@ -81,7 +81,7 @@ export default {
         if(project.video) this.video = project.video;
         if(project.report) {
             let runtimeConfig = useRuntimeConfig();
-            this.reportUrl = runtimeConfig.public.baseUrl + "/" + project.report;
+            this.reportUrl = runtimeConfig.public.baseUrl + project.report;
         }
     },
 }

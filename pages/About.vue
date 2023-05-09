@@ -59,7 +59,7 @@ export default {
     },
     created() {
         let runtimeConfig = useRuntimeConfig();
-        this.cvUrl = runtimeConfig.public.baseUrl + '/cv.pdf';
+        this.cvUrl = runtimeConfig.public.baseUrl + 'cv.pdf';
         console.log(this.cvUrl)
     }
 }
