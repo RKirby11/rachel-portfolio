@@ -78,7 +78,6 @@
                 "Pitching to investors to ontain pre-seed investment.",
                 "Developing product roadmaps and sprint plans to guide our growing development team.",
                 "Supporting the development team using daily stand ups and fortnighty sprint restrospectives.",
-                "Releasing the MVP to a number of trial partners including teams at OCSA, Innovate UK, and Cambridge Consultants.",
                 "Onboarding paying customers and managing our financial accounts."
             ],
             "result": [
@@ -243,6 +242,66 @@
             ]
         },
         {
+            "title": "Utopi",
+            "description": "Utopi develops sustainable, modular toys for children.",
+            "link": null,
+            "tags": [
+                "design",
+                "business"
+            ],
+            "overview": [
+                "Plastic toys account for 90% of the toy market and are often discarded after a few months of use.",
+                "Utopi aims to reduce this waste by creating modular toys, built with sustainable materials, that can be reconfigured to support the changing requirements of a childs development."
+            ],
+            "imgs": [
+                {
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/utopi.png",
+                    "alt": "Utopi Image Cover"
+                },
+                {
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/utopi-1.png",
+                    "alt": "Utopi Website Example"
+                },
+                {
+                    "src": "https://d23gkw6990ie0c.cloudfront.net/utopi-5.png",
+                    "alt": "Utopi Prototype Example"
+                }
+            ],
+            "toolkit": [
+                {
+                    "skill": "Maya",
+                    "icon": "/icons/skills/maya.png"
+                },
+                {
+                    "skill": "Canva",
+                    "icon": "/icons/skills/canva.png"
+                },
+                {
+                    "skill": "Wix",
+                    "icon": "/icons/skills/wix.png"
+                }
+            ],
+            "role": "Within our team of three, I was individually responsible for the development of our website and the 3D modelling of our product. Additionally, I worked alongside my team to undergo in-depth primary and secondary research to understand our target market, our competitors, and the wider social and environmental impacts of our product.",
+            "process": [
+                "Secondary PESTEL analysis of the chidren's toy market.",
+                "Secondary research into sustainable materials and effective circular design practices.",
+                "Primary research (surveys, probes, and prototype testing) with parents in our target market.",
+                "Development of user personas based on our research.",
+                "Ideation of product designs and business models.",
+                "Development of a 3D model of our product (as well as some physical prototypes).",
+                "Development of a website to showcase our product and business.",
+                "Analysis of the feasibility and viability of the product and business.",
+                "Final report and presentation of our product and business."
+            ],
+            "result": [
+                "We designed 4 toys aimed at supporting different stages of children's development. These toys were housed within a modular box, which itself could be used for a variety of forms of play. The individual toys within the box could be returned once the child grew bored, and then re-used for another child - as such they were designed to be durable and easily to clean.",
+                "Various incentives, such as discounts on new toys after a return, or opportunities for collective gift giving for childrens birthdays, were designed to encourage parents to switch to Utopi toys.",
+                "We developed a physical prototype for some of the toys and gained real feedback from parents and children, as well as feedback from a number of children's toy sellers."
+            ],
+            "video": "https://www.youtube.com/embed/zG5cO2djp1M",
+            "report": "utopi-report.pdf"
+        },
+        {
             "title": "The Grand Appeal",
             "description": "Developing an addition to The Grand Appeal's website to increase user engagement.",
             "link": null,
@@ -325,64 +384,6 @@
                 "The web app enabled users to sign in, explore various recipes, store chosen recipes within a weekly meal plan, save the plan, and export the ingredients list to a pdf document. A walkthrough of the website can be found below."
             ],
             "video": "https://www.youtube.com/embed/QVRkhRkGl80"
-        },
-        {
-            "title": "Utopi",
-            "description": "Utopi develops sustainable, modular toys for children.",
-            "link": null,
-            "tags": ["design", "business"],
-            "overview" : [
-                "Plastic toys account for 90% of the toy market and are often discarded after a few months of use.",
-                "Utopi aims to reduce this waste by creating modular toys, built with sustainable materials, that can be reconfigured to support the changing requirements of a childs development."
-            ],
-            "imgs": [
-                {
-                    "src": "https://d23gkw6990ie0c.cloudfront.net/utopi.png",
-                    "alt": "Utopi Image Cover"
-                },
-                {
-                    "src": "https://d23gkw6990ie0c.cloudfront.net/utopi-1.png",
-                    "alt": "Utopi Website Example"
-                },
-                {
-                    "src": "https://d23gkw6990ie0c.cloudfront.net/utopi-5.png",
-                    "alt": "Utopi Prototype Example"
-                }
-            ],
-            "toolkit": [
-                {
-                    "skill": "Maya",
-                    "icon": "/icons/skills/maya.png"
-                },
-                {
-                    "skill": "Canva",
-                    "icon": "/icons/skills/canva.png"
-                },
-                {
-                    "skill": "Wix",
-                    "icon": "/icons/skills/wix.png"
-                }
-            ],
-            "role": 
-                "Within our team of three, I was individually responsible for the development of our website and the 3D modelling of our product. Additionally, I worked alongside my team to undergo in-depth primary and secondary research to understand our target market, our competitors, and the wider social and environmental impacts of our product.",
-            "process": [ 
-                "Secondary PESTEL analysis of the chidren's toy market.",
-                "Secondary research into sustainable materials and effective circular design practices.",
-                "Primary research (surveys, probes, and prototype testing) with parents in our target market.",
-                "Development of user personas based on our research.",
-                "Ideation of product designs and business models.",
-                "Development of a 3D model of our product (as well as some physical prototypes).",
-                "Development of a website to showcase our product and business.",
-                "Analysis of the feasibility and viability of the product and business.",
-                "Final report and presentation of our product and business."
-            ],
-            "result": [
-                "We designed 4 toys aimed at supporting different stages of children's development. These toys were housed within a modular box, which itself could be used for a variety of forms of play. The individual toys within the box could be returned once the child grew bored, and then re-used for another child - as such they were designed to be durable and easily to clean.",
-                "Various incentives, such as discounts on new toys after a return, or opportunities for collective gift giving for childrens birthdays, were designed to encourage parents to switch to Utopi toys.",
-                "We developed a physical prototype for some of the toys and gained real feedback from parents and children, as well as feedback from a number of children's toy sellers."
-            ],
-            "video": "https://www.youtube.com/embed/zG5cO2djp1M",
-            "report": "utopi-report.pdf"
         },
         {
             "title": "UniBoost",
