@@ -13,7 +13,7 @@
                         <p class='text-lg'>Currently working as a co-founder of Graphium Technologies LTD. A B2B SaaS company that helps businesses make better use of their unstructured research data.</p>
                     </div>
                     <div class='flex mt-8'>
-                        <CallToAction :url='cvUrl' target='_blank' text='View CV'/>
+                        <!-- <CallToAction :url='cvUrl' target='_blank' text='View CV'/> -->
                         <CallToAction url='/contact' target='_self' text='Contact Me'/>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
 const highlights = await $fetch('/api/data/highlights');
 const work = await $fetch('/api/data/work');
 const education = await $fetch('/api/data/education');
-const cvUrl = await $fetch(`/api/s3/rachel-kirby-cv.pdf`);
+// const cvUrl = await $fetch(`/api/s3/rachel-kirby-cv.pdf`);
 useHead({
     title: 'Rachel Kirby | About',
     meta: [{ 

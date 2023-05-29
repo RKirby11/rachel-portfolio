@@ -11,8 +11,8 @@
                 <div v-for="(item, index) in project.overview" :key='index'>
                     <p class='text-lg mb-2'>{{ item }}</p>
                 </div>
-                <div v-if="reportUrl || project.link" class='flex mt-8'>
-                    <CallToAction :url='reportUrl ? reportUrl : project.link' target='_blank' :text="reportUrl ? 'View Project Report' : 'View Website'"/>
+                <div v-if="project.link" class='flex mt-8'>
+                    <CallToAction :url='project.link' target='_blank' text="View Website"/>
                 </div>
             </div>
             <div class='flex justify-center lg:justify-end mt-8 lg:mt-0'>
@@ -64,10 +64,10 @@ if(route.params.id <= 0 || route.params >= 9)
     createError({ statusCode: 404, message: 'Project not found' })
 
 const project = await $fetch(`/api/projects/byIndex/${route.params.id}`);
-const reportUrl = ref(null);
-if(project.report) {
-    reportUrl.value = await $fetch(`/api/s3/${project.report}`);
-}
+// const reportUrl = ref(null);
+// if(project.report) {
+//     reportUrl.value = await $fetch(`/api/s3/${project.report}`);
+// }
 const previousProject = route.params.id == 0 ? null : parseInt(route.params.id) - 1;
 const nextProject = route.params.id == 8 ? null : parseInt(route.params.id) + 1;
 
