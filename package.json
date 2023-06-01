@@ -21,7 +21,8 @@
         "@aws-sdk/client-s3": "^3.329.0",
         "@aws-sdk/s3-request-presigner": "^3.329.0",
         "nuxt-mail": "^3.1.42",
-        "path-browserify": "^1.0.1"
+        "path-browserify": "^1.0.1",
+        "redirect-ssl": "^3.0.0"
     },
     "engines": {
         "node": "18.16.0"
