@@ -5,7 +5,7 @@
                 <div class='h-100 flex flex-col justify-around'>
                     <div>
                         <h1 class='text-4xl font-bold mb-4'>Hello!</h1>
-                        <h2 class='text-2xl mb-4'>I'm a product manager and software engineer from Bristol.</h2>
+                        <h2 class='text-2xl mb-4'>I'm a software developer based in London.</h2>
                         <p class='text-xl'>Take a look around my site to learn a bit more about me and the projects I've been involved in.
                         </p>
                     </div>

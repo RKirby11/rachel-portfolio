@@ -5,12 +5,11 @@
                 <div class='h-100 flex flex-col justify-around'>
                     <div>
                         <h1 class='text-2xl font-bold mb-4'>
-                           I'm a product manager and software engineer devoted to solving real world challenges and delivering excellent customer experiences.
+                           I'm a software engineer devoted to solving real world challenges and delivering excellent customer experiences.
                         </h1>
                         <h2 class='text-xl mb-4'>
-                            Over three years working in tech start ups, I've been responsible for managing the product lifecycle from ideation to delivery, leading teams of developers and designers, and building products that customers love.
+                            Over four years working in tech start ups, I've been responsible for managing the product lifecycle from ideation to delivery, leading teams of developers and designers, and building products that customers love.
                         </h2>
-                        <p class='text-lg'>Currently working as a co-founder of Graphium Technologies LTD. A B2B SaaS company that helps businesses make better use of their unstructured research data.</p>
                     </div>
                     <div class='flex mt-8'>
                         <!-- <CallToAction :url='cvUrl' target='_blank' text='View CV'/> -->
@@ -21,7 +20,7 @@
             </div>
         </div>
         
-        <div class='mt-20 lg:mx-16 grid grid-cols-1 md:grid-cols-3'>
+        <div class='mt-20 lg:mx-16 grid grid-cols-1 md:grid-cols-3 gap-5'>
             <div class='flex justify-center mb-5 md:mb-0' v-for='highlight in highlights' :key="highlight.headline">
                 <HighlightCard :item='highlight'/>
             </div>
@@ -29,7 +28,7 @@
         <div class='grid grid-cols-1 lg:grid-cols-2 mb-12'>
             <div class='relative lg:mr-5'>
                 <SectionTitle title='Employment'/>
-                <div class='hidden sm:block absolute w-1 h-[365px] left-[9px] top-[200px] bg-dblue'></div>
+                <div class='hidden sm:block absolute w-1 h-[525px] left-[9px] top-[200px] bg-dblue'></div>
                 <div class='flex justify-center mb-4' v-for='item in work' :key="item.company">
                     <WorkCard :item='item'/>
                 </div>

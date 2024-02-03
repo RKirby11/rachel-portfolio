@@ -1,10 +1,16 @@
 {
     "work": [
         {
-            "company": "Graphium Technologies LTD",
+            "company": "Danburykline",
+            "position": "Full Stack Engineer",
+            "url": "https://danburykline.co.uk/DK/",
+            "date": "Sept 2023 - Present"
+        },
+        {
+            "company": "Graphium Technologies",
             "position": "Co-Founder",
             "url": "https://graphium.ai",
-            "date": "Jun 2021 - Present"
+            "date": "Jun 2021 - Aug 2023"
         },
         {
             "company": "The Alacrity Foundation",
